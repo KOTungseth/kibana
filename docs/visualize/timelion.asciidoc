@@ -16,11 +16,29 @@ For example, Timelion enables you to easily get the answers to questions like:
 [[time-series-intro]]
 == Create time series visualizations
 
+<<<<<<< HEAD
 To compare the real-time percentage of CPU time spent in user space to the results offset by one hour, create a time series visualization.
  
 [float]
 [[time-series-before-you-begin]]
 === Before you begin
+=======
+[[timelion-getting-started]]
+=== Getting started
+
+Ready to experience all that is Timelion? This getting started tutorial shows
+you how to:
+
+* <<timelion-create, Create a time series chart with multiple expressions>>
+* <<timelion-customize, Customize the visualization type and formatting options>>
+* <<timelion-math, Use mathematical functions to manipulate your data>>
+* <<timelion-conditional, Track trends and use conditional logic to format outliers>>
+* <<timelion-save, Add Timelion visualizations to a dashboard>>
+* <<timelion-inline-help, Access inline help and documentation>>
+
+[[timelion-create]]
+==== Creating time series visualizations
+>>>>>>> e1418dc249... TOC fix
 
 In this tutorial, you'll use the time series data from https://www.elastic.co/guide/en/beats/metricbeat/current/index.html[Metricbeat]. To ingest the data locally, link:https://www.elastic.co/downloads/beats/metricbeat[download Metricbeat].
 
@@ -70,9 +88,21 @@ To easily distinguish between the two data sets, add the label names:
 image::images/timelion-create03.png[]
 {nbsp}
 
+<<<<<<< HEAD
 [float]
 [[time-series-title]]
 === Add a title 
+=======
+[[timelion-customize]]
+==== Customize and format visualizations
+
+Timelion has plenty of options for customization. You can personalize nearly every aspect of a chart with the functions available. For this tutorial, you will perform the following modifications.
+
+* Add a title
+* Change a series type
+* Change the color and opacity of a series
+* Modify the legend
+>>>>>>> e1418dc249... TOC fix
 
 Add a meaningful title:
 
@@ -138,7 +168,12 @@ image::images/timelion-customize04.png[]
 [[time-series-save-visualization]]
 === Save the visualization
 
+<<<<<<< HEAD
 When you have finished making changes, save the visualization.
+=======
+[[timelion-math]]
+==== Using mathematical functions
+>>>>>>> e1418dc249... TOC fix
 
 . Click *Save*.
 
@@ -237,9 +272,14 @@ Customize and format the visualization using functions:
 image::images/timelion-math05.png[]
 {nbsp}
 
+<<<<<<< HEAD
 [float]
 [[mathematical-functions-save-visualization]]
 === Save the visualization
+=======
+[[timelion-conditional]]
+==== Using conditional logic and tracking trends
+>>>>>>> e1418dc249... TOC fix
 
 When you have finished making changes, save the visualization.
 
@@ -299,21 +339,41 @@ To track the amount of memory used, create two thresholds:
 <1> Timelion conditional logic for the _greater than_ operator. In this example, the warning threshold is 11.3GB (`11300000000`), and the severe threshold is 11.375GB (`11375000000`). If the threshold values are too high or low for your machine, adjust the values accordingly.
 <2> `if()` compares each point to a number. If the condition evaluates to `true`, adjust the styling. If the condition evaluates to `false`, use the default styling.
 
+<<<<<<< HEAD
 image::images/timelion-conditional02.png[]
 {nbsp}
+=======
+Continue on to the next section to learn how to save your timelion sheet and add an expression to your dashboard.
+
+[[timelion-save]]
+==== Save and add to dashboard
+>>>>>>> e1418dc249... TOC fix
 
 [float]
 [[conditional-determine-trend]]
 === Determine the trend
 
+<<<<<<< HEAD
 To determine the trend, create a new data series:
+=======
+[role="xpack"]
+[[timelion-read-only-access]]
+===== Read only access
+When you have insufficient privileges to save Timelion sheets, the following indicator in Kibana will be
+displayed and the *Save* button won't be visible. For more information on granting access to
+Kibana see <<xpack-security-authorization>>.
+>>>>>>> e1418dc249... TOC fix
 
 [source,text]
 ----------------------------------
 .es(index=metricbeat-*, timefield='@timestamp', metric='max:system.memory.actual.used.bytes'), .es(index=metricbeat-*, timefield='@timestamp', metric='max:system.memory.actual.used.bytes').if(gt,11300000000,.es(index=metricbeat-*, timefield='@timestamp', metric='max:system.memory.actual.used.bytes'),null).label('warning').color('#FFCC11'), .es(index=metricbeat-*, timefield='@timestamp', metric='max:system.memory.actual.used.bytes').if(gt,11375000000,.es(index=metricbeat-*, timefield='@timestamp', metric='max:system.memory.actual.used.bytes'),null).label('severe').color('red'), .es(index=metricbeat-*, timefield='@timestamp', metric='max:system.memory.actual.used.bytes').mvavg(10) <1>
 ----------------------------------
 
+<<<<<<< HEAD
 <1> `mvavg()` calculates the moving average over a specified period of time. In this example, `.mvavg(10)` creates a moving average with a window of 10 data points.
+=======
+===== Save entire Timelion sheet
+>>>>>>> e1418dc249... TOC fix
 
 image::images/timelion-conditional03.png[]
 {nbsp}
@@ -322,7 +382,11 @@ image::images/timelion-conditional03.png[]
 [[conditional-format-visualization]]
 === Customize and format the visualization
 
+<<<<<<< HEAD
 Customize and format the visualization using functions:
+=======
+===== Save as dashboard panel
+>>>>>>> e1418dc249... TOC fix
 
 [source,text]
 ----------------------------------
