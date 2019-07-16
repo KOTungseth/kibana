@@ -9,6 +9,7 @@ to tease out the answers to complex questions, and visualize the results.
 For example, Timelion enables you to easily get the answers to questions like:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * <<time-series-intro, What is the real-time percentage of CPU time spent in user space to the results offset by one hour?>>
 * <<mathematical-functions-intro, What does my inbound and outbound network traffic look like?>>
 * <<timelion-conditional-intro, How much memory is my system actually using?>>
@@ -32,19 +33,26 @@ To compare the real-time percentage of CPU time spent in user space to the resul
 * What percent of Japan's population came to my site today?
 * What's the 10-day moving average of the S&P 500?
 * What's the cumulative sum of all search requests received in the last 2 years?
-
-[[time-series-intro]]
-=== Create time series visualizations
-
-To compare the real-time percentage of CPU time spent in user space to the results offset by one hour, create a time series visualization.
+=======
+* <<time-series-intro, What is the real-time percentage of CPU time spent in user space to the results offset by one hour?>>
+* <<mathematical-functions-intro, What does my inbound and outbound network traffic look like?>>
+* <<timelion-conditional-intro, How much memory is my system actually using?>>
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 [float]
+[[time-series-intro]]
+== Create time series visualizations
+
+To compare the real-time percentage of CPU time spent in user space to the results offset by one hour, create a time series visualization.
+ 
+[float]
 [[time-series-before-you-begin]]
-==== Before you begin
+=== Before you begin
 
 In this tutorial, you'll use the time series data from https://www.elastic.co/guide/en/beats/metricbeat/current/index.html[Metricbeat]. To ingest the data locally, link:https://www.elastic.co/downloads/beats/metricbeat[download Metricbeat].
 
 [float]
+<<<<<<< HEAD
 [[time-series-create]]
 ==== Create the visualization
 >>>>>>> e62b529d1a... More content reorganization and updated images
@@ -72,6 +80,10 @@ In this tutorial, you'll use the time series data from https://www.elastic.co/gu
 [[time-series-define-functions]]
 ==== Define the functions
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+[[time-series-define-functions]]
+=== Define the functions
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To start tracking the real-time percentage of CPU, enter the following in the *Timelion Expression* field:
 
@@ -86,10 +98,14 @@ image::images/timelion-create01.png[]
 [float]
 [[time-series-compare-data]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Compare the data
 =======
 ==== Compare the data
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+=== Compare the data
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To compare the two data sets, add another series with data from the previous hour, separated by a comma:  
 
@@ -121,10 +137,14 @@ image::images/timelion-create02.png[]
 [float]
 [[time-series-add-labels]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Add label names
 =======
 ==== Add label names
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+=== Add label names
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To easily distinguish between the two data sets, add the label names:
 
@@ -180,7 +200,7 @@ Add a meaningful title:
 =======
 [float]
 [[time-series-title]]
-==== Add a title 
+=== Add a title 
 
 Add a meaningful title:
 
@@ -202,6 +222,7 @@ image::images/timelion-customize01.png[]
 [float]
 [[time-series-change-chart-type]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Change the chart type
 
 To differentiate between the current hour data and the last hour data, change the chart type:
@@ -214,6 +235,9 @@ To differentiate between the current hour data and the last hour data, change th
 <1> `.lines()` changes the appearance of the chart lines. In this example, `.lines(fill=1,width=0.5)` sets the fill level to `1`, and the border width to `0.5`.
 =======
 ==== Change the chart type
+=======
+=== Change the chart type
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To differentiate between the current hour data and the last hour data, change the chart type:
 
@@ -235,6 +259,7 @@ image::images/timelion-customize02.png[]
 [float]
 [[time-series-change-color]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Change the line colors
 
 To make the current hour data stand out, change the line colors:
@@ -247,6 +272,9 @@ To make the current hour data stand out, change the line colors:
 <1> `.color()` changes the color of the data. Supported color types include standard color names, hexadecimal values, or a color schema for grouped data. In this example, `.color(gray)` represents the last hour, and `.color(#1E90FF)` represents the current hour.
 =======
 ==== Change the line colors
+=======
+=== Change the line colors
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To make the current hour data stand out, change the line colors:
 
@@ -268,6 +296,7 @@ image::images/timelion-customize03.png[]
 [float]
 [[time-series-adjust-legend]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Make adjustments to the legend
 
 Change the position and style of the legend:
@@ -280,6 +309,9 @@ Change the position and style of the legend:
 <1> `.legend()` sets the position and style of the legend. In this example, `.legend(columns=2, position=nw)` places the legend in the north west position of the visualization with two columns.
 =======
 ==== Make adjustments to the legend
+=======
+=== Make adjustments to the legend
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 Change the position and style of the legend:
 
@@ -301,6 +333,7 @@ image::images/timelion-customize04.png[]
 [float]
 [[time-series-save-visualization]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Save the visualization
 
 <<<<<<< HEAD
@@ -311,6 +344,9 @@ When you have finished making changes, save the visualization.
 >>>>>>> e1418dc249... TOC fix
 =======
 ==== Save the visualization
+=======
+=== Save the visualization
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 When you have finished making changes, save the visualization.
 >>>>>>> e62b529d1a... More content reorganization and updated images
@@ -340,33 +376,27 @@ In this tutorial, you'll use the time series data from https://www.elastic.co/gu
 === Define the functions
 =======
 
+[float]
+[float]
 [[mathematical-functions-intro]]
-=== Create visualizations with mathematical functions
+== Create visualizations with mathematical functions
 
 To create a visualization for inbound and outbound network traffic, use mathematical functions.
 
 [float]
 [[mathematical-functions-before-you-begin]]
-==== Before you begin
+=== Before you begin
 
 In this tutorial, you'll use the time series data from https://www.elastic.co/guide/en/beats/metricbeat/current/index.html[Metricbeat]. To ingest the data locally, link:https://www.elastic.co/downloads/beats/metricbeat[download Metricbeat].
 
 [float]
-[[math-add-timelion-visualization]]
-==== Create the visualization
-
-Create the Timelion visualization.
-
-. Click *Visualize*.
-
-. On the *Visualizations* page, click *Create new visualization*.
-
-. On the *New Visualization* window, click *Timelion*.
-
-[float]
 [[mathematical-functions-define-functions]]
+<<<<<<< HEAD
 ==== Define the functions
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+=== Define the functions
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To start tracking the inbound and outbound network traffic, enter the following in the *Timelion Expression* field:
 
@@ -381,10 +411,14 @@ image::images/timelion-math01.png[]
 [float]
 [[mathematical-functions-plot-change]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Plot the rate of change
 =======
 ==== Plot the rate of change
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+=== Plot the rate of change
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 Change how the data is displayed so that you can easily monitor the inbound traffic:
 
@@ -441,10 +475,14 @@ image::images/timelion-math03.png[]
 [float]
 [[mathematical-functions-convert-data]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Change the data metric
 =======
 ==== Change the data metric
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+=== Change the data metric
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 To make the visualization easier to analyze, change the data metric from bytes to megabytes:
 
@@ -477,6 +515,7 @@ image::images/timelion-math04.png[]
 <<<<<<< HEAD
 [[mathematical-functions-add-labels]]
 === Customize and format the visualization
+<<<<<<< HEAD
 =======
 [[mathematical-functions-customize]]
 =======
@@ -484,6 +523,8 @@ image::images/timelion-math04.png[]
 >>>>>>> 97f1394b16... Final clean up
 ==== Customize and format the visualization
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 Customize and format the visualization using functions:
 
@@ -545,7 +586,7 @@ image::images/timelion-math05.png[]
 
 [float]
 [[mathematical-functions-save-visualization]]
-==== Save the visualization
+=== Save the visualization
 
 When you have finished making changes, save the visualization.
 
@@ -555,11 +596,9 @@ When you have finished making changes, save the visualization.
 
 . Click *Confirm Save*.
 
-[[timelion-conditional]]
-=== Create visualizations with conditional logic and tracking trends
-++++
-<titleabbrev>Conditional logic and tracking trends</titleabbrev>
-++++
+[float]
+[[timelion-conditional-intro]]
+== Create visualizations with conditional logic and tracking trends
 
 To easily detect outliers and discover patterns over time, modify time series data with conditional logic and create a trend with a moving average.
 
@@ -587,13 +626,18 @@ With Timelion conditional logic, you can use the following operator values to co
 [[time-series-before-you-begin]]
 =======
 [[conditional-before-you-begin]]
+<<<<<<< HEAD
 >>>>>>> 97f1394b16... Final clean up
 ==== Before you begin
 >>>>>>> e62b529d1a... More content reorganization and updated images
+=======
+=== Before you begin
+>>>>>>> 3a5d1ac72d... Comments from Gail
 
 In this tutorial, you'll use the time series data from https://www.elastic.co/guide/en/beats/metricbeat/current/index.html[Metricbeat]. To ingest the data locally, link:https://www.elastic.co/downloads/beats/metricbeat[download Metricbeat].
 
 [float]
+<<<<<<< HEAD
 <<<<<<< HEAD
 [[conditional-define-functions]]
 === Define the functions
@@ -702,8 +746,10 @@ Create the visualization using Timelion.
 . On the *New Visualization* window, click *Timelion*.
 
 [float]
+=======
+>>>>>>> 3a5d1ac72d... Comments from Gail
 [[conditional-define-functions]]
-==== Define the functions
+=== Define the functions
 
 To chart the maximum value of `system.memory.actual.used.bytes`, enter the following in the *Timelion Expression* field:
 
@@ -717,7 +763,7 @@ image::images/timelion-conditional01.png[]
 
 [float]
 [[conditional-track-memory]]
-==== Track used memory
+=== Track used memory
 
 To track the amount of memory used, create two thresholds:
 
@@ -734,7 +780,7 @@ image::images/timelion-conditional02.png[]
 
 [float]
 [[conditional-determine-trend]]
-==== Determine the trend
+=== Determine the trend
 
 To determine the trend, create a new data series:
 
@@ -750,7 +796,7 @@ image::images/timelion-conditional03.png[]
 
 [float]
 [[conditional-format-visualization]]
-==== Customize and format the visualization
+=== Customize and format the visualization
 
 Customize and format the visualization using functions:
 
@@ -770,7 +816,7 @@ image::images/timelion-conditional04.png[]
 
 [float]
 [[conditional-save-visualization]]
-==== Save the visualization
+=== Save the visualization
 
 >>>>>>> e62b529d1a... More content reorganization and updated images
 When you have finished making changes, save the visualization.
