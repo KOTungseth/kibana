@@ -152,9 +152,9 @@ Here are some things to try:
 
 //* Learn more about:
 
-** {kibana-ref}/canvas-workpad[Workpads]
+** {kibana-ref}/canvas-workpad.html[Workpads]
 
-** {kibana-ref}/canvas-elements[Elements]
+** {kibana-ref}/canvas-elements.html[Elements]
 //** Assets
 //** Expressions
 
