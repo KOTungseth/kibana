@@ -76,6 +76,8 @@ For series that are grouped by a term, you can specify a mustache variable of `{
 .. Select *Metrics*.
 
 .. From the dropdown lists, choose your options.
++
+If you are using the *Metric* visualization with the *Filter Ratio* aggregation, use the <<{ref}query-dsl-query-string-query.html>>.
 
 .. To add another metric, click *+*.
 +
@@ -84,8 +86,6 @@ When you add more than one metric, the last metric value is displayed, which is 
 . To specify the format and display options, select *Options*.
 
 . To specify how to group or split the data, choose an option from the *Group by* drop down list.
-+
-By default, the data series are grouped by everything.
 
 [float]
 [[tsvb-panel-options]]
