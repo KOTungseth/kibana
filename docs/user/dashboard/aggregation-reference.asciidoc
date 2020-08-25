@@ -12,6 +12,7 @@ story about the trends, patterns, and outliers in your data.
 
 For information about Elasticsearch bucket aggregations, refer to {ref}/search-aggregations-bucket.html[Bucket aggregations].
 
+<<<<<<< HEAD
 [options="header"]
 |===
 
@@ -70,10 +71,75 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 ^| X
 ^| X
 ^| X
+=======
+|===
+
+| Type 
+| Visualizations
+| Data table
+| Markdown
+| Lens
+| TSVB
+
+| Histogram 
+| X
+| X
+| X
+| 
+| 
+
+| Date histogram 
+| X
+| X
+| X
+| X
+| X
+
+| Date range 
+| X
+| X
+| X
+| 
+| 
+
+| Filter 
+| X
+| X
+| X
+| 
+| X
+
+| Filters
+| X
+| X
+| X
+| 
+| X
+
+| GeoHash grid 
+| X
+| X
+| X
+| 
+| 
+
+| IP range 
+| X
+| X
+| X
+| 
+| 
+
+| Range 
+| X
+| X
+| X
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 | 
 | 
 
 | Terms
+<<<<<<< HEAD
 ^| X
 ^| X
 ^| X
@@ -86,6 +152,20 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 ^| X
 |
 ^| X
+=======
+| X
+| X
+| X
+| X
+| X
+
+| Significant terms 
+| X
+| X
+| X
+| X
+| X
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 
 |===
 
@@ -95,6 +175,7 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 
 For information about Elasticsearch metrics aggregations, refer to {ref}/search-aggregations-metrics.html[Metrics aggregations].
 
+<<<<<<< HEAD
 [options="header"]
 |===
 
@@ -157,11 +238,69 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 ^| X
 
 | Value count 
+=======
+|===
+
+| Type 
+| Visualizations
+| Data table
+| Markdown
+| Lens
+| TSVB
+
+| Average and Sum 
+| X
+| X
+| X
+| X
+| X
+
+| Cardinality
+| X
+| X
+| X
+| X
+| X
+
+| Max and Min 
+| X
+| X
+| X
+| 
+| 
+
+| Percentiles 
+| X
+| X
+| X
+| 
+| X
+
+| Percentiles Rank
+| X
+| X
+| X
+| 
+| X
+
+| Top hits 
+| X
+| X
+| X
+| 
+| X
+
+| Value count
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 | 
 | 
 | 
 | 
+<<<<<<< HEAD
 ^| X
+=======
+| X
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 
 |===
 
@@ -171,6 +310,7 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 
 For information about Elasticsearch pipeline aggregations, refer to {ref}/search-aggregations-pipeline.html[Pipeline aggregations].
 
+<<<<<<< HEAD
 [options="header"]
 |===
 
@@ -224,12 +364,65 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 ^| X
 ^| 
 ^| X
+=======
+|===
+
+| Type 
+| Visualizations
+| Data table
+| Markdown
+| Lens
+| TSVB
+
+| Avg bucket
+| X
+| X
+| X
+| 
+| X
+
+| Derivative 
+| X
+| X
+| X
+| 
+| X
+
+| Max and min bucket 
+| X
+| X
+| X
+| 
+| X
+
+| Sum bucket 
+| X
+| X
+| X
+| 
+| X
+
+| Moving average
+| X
+| X
+| X
+| 
+| X
+
+| Cumulative sum
+| X
+| X
+| X
+| X
+| X
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 
 | Bucket script 
 | 
 | 
 | 
 | 
+<<<<<<< HEAD
 ^| X
 
 | Serial differencing 
@@ -240,3 +433,16 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 ^| X
 
 |===
+=======
+| X
+
+| Serial differencing 
+| X
+| X
+| X
+| 
+| X
+
+|===
+
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh

@@ -55,11 +55,20 @@ image::getting-started/images/tutorial-sample-discover2.png[]
 === View and analyze the data
 
 A _dashboard_ is a collection of panels that provide you with an overview of your data that you can 
+<<<<<<< HEAD
 use to analyze your data. Panels contain everything you need, including visualizations, 
 interactive controls, Markdown, and more.
 
 To open the *Global Flight* dashboard, open the menu, then go to *Dashboard*.
 
+=======
+use to analyze your data. On a dashboard, you can add a variety of panels that you can rearrange to build a 
+dashboard that tells a story about your data. Panels contain everythng you need, including visualizations, 
+interactive controls, Markdown, and more.
+
+To open the *Global Flight* dashboard, open the menu, then go to *Dashboard*.
+
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 [role="screenshot"]
 image::getting-started/images/tutorial-sample-dashboard.png[]
 
@@ -104,9 +113,15 @@ image::getting-started/images/tutorial-sample-edit2.png[]
 To focus in on the data you want to explore, use filters and queries. 
 For more information, refer to 
 {ref}/query-filter-context.html[Query and filter context].
+<<<<<<< HEAD
 
 To filter the data:
 
+=======
+
+To filter the data:
+
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 . In the *Controls* visualization, select an *Origin City* and *Destination City*, then click *Apply changes*.
 +
 The `OriginCityName` and the `DestCityName` fields filter the data in the panels. 
@@ -118,6 +133,7 @@ image::getting-started/images/tutorial-sample-filter.png[]
 
 . To manually add a filter, click *Add filter*,
 then specify the data you want to view.
+<<<<<<< HEAD
 
 . When you are finished experimenting, remove all filters.
 
@@ -134,6 +150,24 @@ OriginCityName: Rome
 [source,text]
 OriginCityName:Rome AND (Carrier:JetBeats OR Carrier:"Kibana Airlines")
 +
+=======
+
+. When you are finished experimenting, remove all filters.
+
+[[query-the-data]]
+To query the data:
+
+. To view all flights out of Rome, enter the following in the *KQL* query bar, then click *Update*:
++
+[source,text]
+OriginCityName:Rome   
+
+. For a more complex query with AND and OR, enter:
++
+[source,text]
+OriginCityName:Rome AND (Carrier:JetBeats OR "Kibana Airlines")
++
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 The dashboard panels update to display the flights out of Rome on JetBeats and 
 {kib} Airlines.  
 +
@@ -151,6 +185,13 @@ Now that you know the {kib} basics, try out the <<create-your-own-dashboard, Cre
 * Add a data set to {kib}
 
 * Define an index pattern
+<<<<<<< HEAD
+=======
+
+* Discover and explore data
+
+* Create and add panels to a dashboard
+>>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 
 * Discover and explore data
 
