@@ -116,6 +116,7 @@ This content has moved to the <<development-rbac, Security>> page.
 == TSVB
 
 This page was deleted. See <<tsvb>>.
+<<<<<<< HEAD
 
 [role="exclude",id="managing-cross-cluster-replication"]
 == Cross-Cluster Replication
@@ -128,3 +129,5 @@ This content has moved. See
 
 This content has moved. See
 {ref}/ccr-getting-started.html#ccr-getting-started-remote-cluster[Connect to a remote cluster].
+=======
+>>>>>>> 1aa47288d26... Fixes broken links
