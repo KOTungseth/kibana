@@ -50,7 +50,7 @@ If you uninstall and reinstall a data set, the timestamps change to reflect the 
 
 --
 
-include::{kib-repo-dir}/getting-started/add-sample-data.asciidoc[]
+include::{kib-repo-dir}/getting-started/tutorial-sample-data.asciidoc[]
 
 include::{kib-repo-dir}/getting-started/tutorial-full-experience.asciidoc[]
 

@@ -17,6 +17,10 @@ image:images/Dashboard_inspect.png[Inspect in dashboard]
 
 include::explore-underlying-data.asciidoc[]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> d1f399818b1... Fixes broken links and partinto error
 include::drilldowns.asciidoc[]
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh

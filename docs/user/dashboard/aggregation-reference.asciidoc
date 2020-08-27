@@ -75,65 +75,49 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 |===
 
 | Type 
-| Visualizations
-| Data table
-| Markdown
-| Lens
-| TSVB
-
-| Histogram 
-| X
-| X
-| X
-| 
-| 
-
-| Date histogram 
-| X
-| X
-| X
-| X
-| X
-
-| Date range 
-| X
-| X
-| X
-| 
-| 
-
-| Filter 
-| X
-| X
-| X
-| 
-| X
-
+| Histogram
+| Date histogram
+| Date range
+| Filter
 | Filters
+| GeoHash grid
+| IP range
+| Range
+| Terms
+| Significant terms
+
+| Visualizations
 | X
 | X
 | X
-| 
+| X
+| X
+| X
+| X
+| X
+| X
 | X
 
-| GeoHash grid 
+| Data table
 | X
 | X
 | X
-| 
-| 
+| X
+| X
+| X
+| X
+| X
+| X
+| X
 
-| IP range 
+| Markdown
 | X
 | X
 | X
-| 
-| 
-
-| Range 
 | X
 | X
 | X
+<<<<<<< HEAD
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 | 
 | 
@@ -153,16 +137,34 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 |
 ^| X
 =======
-| X
+=======
+>>>>>>> d1f399818b1... Fixes broken links and partinto error
 | X
 | X
 | X
 | X
 
-| Significant terms 
+| Lens
+| 
+| X
+| 
+| 
+| 
+| 
+| 
+| 
 | X
 | X
+
+| TSVB
+| 
 | X
+| 
+| X
+| X
+| 
+| 
+| 
 | X
 | X
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
@@ -242,53 +244,56 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 |===
 
 | Type 
-| Visualizations
-| Data table
-| Markdown
-| Lens
-| TSVB
-
 | Average and Sum 
-| X
-| X
-| X
-| X
-| X
-
 | Cardinality
-| X
-| X
-| X
-| X
-| X
-
 | Max and Min 
-| X
-| X
-| X
-| 
-| 
-
 | Percentiles 
-| X
-| X
-| X
-| 
-| X
-
 | Percentiles Rank
+| Top hits 
+| Value count
+
+| Visualizations
 | X
 | X
 | X
+| X
+| X
+| X
+| 
+
+| Data table
+| X
+| X
+| X
+| X
+| X
+| X
+
+| Markdown
+| X 
+| X
+| X
+| X
+| X
+| X
+| 
+
+| Lens
+| X
+| X
+| 
+| 
+| 
 | 
 | X
 
-| Top hits 
+| TSVB
 | X
 | X
+|  
 | X
-| 
 | X
+<<<<<<< HEAD
 
 | Value count
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
@@ -301,6 +306,10 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 =======
 | X
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+| X
+| 
+>>>>>>> d1f399818b1... Fixes broken links and partinto error
 
 |===
 
@@ -368,58 +377,50 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 |===
 
 | Type 
-| Visualizations
-| Data table
-| Markdown
-| Lens
-| TSVB
-
 | Avg bucket
-| X
-| X
-| X
-| 
-| X
-
 | Derivative 
-| X
-| X
-| X
-| 
-| X
-
 | Max and min bucket 
-| X
-| X
-| X
-| 
-| X
-
-| Sum bucket 
-| X
-| X
-| X
-| 
-| X
-
+| Sum bucket
 | Moving average
+| Cumulative sum
+| Bucket script
+| Serial differencing
+
+| Visualizations
+| X
+| X
+| X
 | X
 | X
 | X
 | 
 | X
 
-| Cumulative sum
+| Data table
 | X
 | X
 | X
 | X
+| X
+| X
+| 
+| X
+
+| Markdown 
+| X
+| X
+| X
+| X
+| X
+| X
+| 
 | X
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 
-| Bucket script 
+| Lens
 | 
 | 
+|  
 | 
 | 
 <<<<<<< HEAD
@@ -435,12 +436,17 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 |===
 =======
 | X
-
-| Serial differencing 
-| X
-| X
-| X
 | 
+| 
+
+| TSVB 
+| X
+| X
+| X
+| X
+| X
+| X
+| X
 | X
 
 |===

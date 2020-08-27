@@ -122,7 +122,7 @@ To visualize geographic information in the log file data, use <<maps,Maps>>.
 [[visualize-geographic-information]]
 === Visualize geographic information
 
-To visualize geographic information in the log file data, use <<Maps>>.
+To visualize geographic information in the log file data, use <<maps,Maps>>.
 
 . Click *Create new*, then click *Maps* on the *New Visualization* window.
 
@@ -227,8 +227,6 @@ Now that you have the basics, you're ready to start exploring your own system da
 * To create presentations of your live data, refer to <<canvas,Canvas>>.
 =======
 
-Your dashboard looks like this:
-+
 [role="screenshot"]
 image::images/tutorial-dashboard.png[]
 
