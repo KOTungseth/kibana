@@ -840,6 +840,7 @@ include::aggregation-reference.asciidoc[]
 =======
 =======
 --
+include::edit-dashboards.asciidoc[]
 
 >>>>>>> d1f399818b1... Fixes broken links and partinto error
 include::explore-dashboard-data.asciidoc[]
