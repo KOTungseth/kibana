@@ -76,16 +76,22 @@ image::images/markdown_example_4.png[]
 [float]
 [[arrange-panels]]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [[moving-containers]]
 [[resizing-containers]]
 =======
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+[[moving-containers]]
+[[resizing-containers]]
+>>>>>>> d2bb346d77c... Review comments
 === Arrange panels
 
 To make your dashboard panels look exactly how you want, you can move, resize, customize, and delete them.
 
 Put the dashboard in *Edit* mode, then use the following options:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 * To move, click and hold the panel header, then drag to the new location.
 
@@ -95,6 +101,10 @@ Put the dashboard in *Edit* mode, then use the following options:
 
 [[resizing-containers]]
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+* To move, click and hold the panel header, then drag to the new location.
+
+>>>>>>> d2bb346d77c... Review comments
 * To resize, click the resize control, then drag to the new dimensions.
 
 * To delete, open the panel menu, then select Delete from dashboard. When you delete a panel from the dashboard, the 
@@ -115,8 +125,14 @@ including renaming, editing, and cloning.
 To duplicate a panel and its configured functionality, clone the panel. Panels support all of the original functionality, 
 including renaming, editing, and cloning. 
 
+<<<<<<< HEAD
 To clone a panel, put the dashboard in *Edit* mode, open the menu for the panel you want to clone, then select *Clone panel*. 
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+. Put the dashboard in *Edit* mode. 
+
+. For the panel you want to clone, open the panel menu, then select *Clone panel*. 
+>>>>>>> d2bb346d77c... Review comments
 
 Cloned panels appear beside the original, and move other panels down to make room when necessary. 
 All cloned visualization panels appear in the visualization list.

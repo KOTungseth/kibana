@@ -18,6 +18,7 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 |===
 
 | Type | Visualizations | Data table | Markdown | Lens | TSVB 
+<<<<<<< HEAD
 
 | Histogram
 ^| X
@@ -79,43 +80,46 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 |===
 
 | Type | Visualizations | Data table | Markdown | Lens | TSVB
+=======
+>>>>>>> d2bb346d77c... Review comments
 
 | Histogram
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
 | 
 
 | Date histogram
-| X
-| X
-| X
-| X
-| X
+^| X
+^| X
+^| X
+^| X
+^| X
 
 | Date range
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
 | 
 
 | Filter
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | Filters
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | GeoHash grid
+<<<<<<< HEAD
 | X
 <<<<<<< HEAD
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
@@ -141,37 +145,50 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 >>>>>>> d1f399818b1... Fixes broken links and partinto error
 | X
 | X
+=======
+^| X
+^| X
+^| X
+>>>>>>> d2bb346d77c... Review comments
 | 
 | 
 
 | IP range
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
 | 
 
 | Range
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
 | 
 
 | Terms
-| X
-| X
-| X
-| X
-| X
+^| X
+^| X
+^| X
+^| X
+^| X
 
 | Significant terms
+<<<<<<< HEAD
 | X
 | X
 | X
 | X
 | X
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+^| X
+^| X
+^| X
+^| X
+^| X
+>>>>>>> d2bb346d77c... Review comments
 
 |===
 
@@ -254,41 +271,42 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 | Type | Visualizations | Data table | Markdown | Lens | TSVB
 
 | Average and Sum 
-| X
-| X
-| X
-| X
-| X
+^| X
+^| X
+^| X
+^| X
+^| X
 
 | Cardinality
-| X
-| X
-| X
-| X
-| X
+^| X
+^| X
+^| X
+^| X
+^| X
 
 | Max and Min
-| X
-| X
-| X
-| X
-| X
+^| X
+^| X
+^| X
+^| X
+^| X
 
 | Percentiles
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | Percentiles Rank
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | Top hits 
+<<<<<<< HEAD
 | X
 | X
 | X
@@ -311,6 +329,13 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 | 
 >>>>>>> da82b81df76... Fixes images and table
 | X
+=======
+^| X
+^| X
+^| X
+| 
+^| X
+>>>>>>> d2bb346d77c... Review comments
 
 | Value count 
 | 
@@ -320,8 +345,12 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 >>>>>>> d1f399818b1... Fixes broken links and partinto error
 =======
 | 
+<<<<<<< HEAD
 | X
 >>>>>>> da82b81df76... Fixes images and table
+=======
+^| X
+>>>>>>> d2bb346d77c... Review comments
 
 |===
 
@@ -395,53 +424,62 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 | Type | Visualizations | Data table | Markdown | Lens | TSVB
 
 | Avg bucket  
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | Derivative  
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | Max and min bucket   
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 | Sum bucket  
-| X
-| X
-| X
-| 
-| X
+^| X
+^| X
+^| X
+^| 
+^| X
  
 | Moving average  
-| X
-| X
-| X
-| 
-| X
+^| X
+^| X
+^| X
+^| 
+^| X
 
 | Cumulative sum 
+<<<<<<< HEAD
 | X
 | X
 | X
 | X
 | X
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+^| X
+^| X
+^| X
+^| X
+^| X
+>>>>>>> d2bb346d77c... Review comments
 
 | Bucket script 
 | 
 | 
 | 
 | 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ^| X
 
@@ -455,13 +493,16 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 |===
 =======
 | X
+=======
+^| X
+>>>>>>> d2bb346d77c... Review comments
 
 | Serial differencing 
-| X
-| X
-| X
+^| X
+^| X
+^| X
 | 
-| X
+^| X
 
 |===
 

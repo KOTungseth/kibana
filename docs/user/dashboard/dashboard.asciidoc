@@ -14,6 +14,7 @@
 --
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 A _dashboard_ is a collection of panels that you use to analyze your data. On a dashboard, you can add a variety of panels that
 you can rearrange and tell a story about your data. Panels contain everything you need, including visualizations,
 interactive controls, markdown, and more.
@@ -23,6 +24,10 @@ With *Dashboard*s, you can:
 A _dashboard_ is a collection of panels that provide you with an overview of your data that you can 
 present and share. On a dashboard, you can add a variety of panels that you can rearrange to build a 
 dashboard that tells a story about your data. Panels contain everythng you need, including visualizations, 
+=======
+A _dashboard_ is a collection of panels that you use to analyze your data. On a dashboard, you can add a variety of panels that 
+you can rearrange and tell a story about your data. Panels contain everything you need, including visualizations, 
+>>>>>>> d2bb346d77c... Review comments
 interactive controls, Markdown, and more.  
 
 <<<<<<< HEAD
@@ -88,8 +93,12 @@ Panels contain everything you need to tell a story about you data, including vis
 [[types-of-panels]]
 == Types of panels
 
+<<<<<<< HEAD
 Panels contain everythng you need to tell a story about you data, including visualizations, 
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+Panels contain everything you need to tell a story about you data, including visualizations, 
+>>>>>>> d2bb346d77c... Review comments
 interactive controls, Markdown, and more.
 
 [cols="50, 50"]
@@ -805,10 +814,14 @@ When a panel contains a stored query, both queries are applied.
 image:images/Dashboard_add_visualization.png[Example add visualization to dashboard]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 To make changes to the panel, put the dashboard in *Edit* mode, then select the edit option from the panel menu.
 The changes you make appear in every dashboard that uses the panel, except if you edit the panel title. Changes to the panel title appear only on the dashboard where you made the change.
 =======
 To make changes to the panel, put the dashboard in *Edit* mode, then select *Edit visualization* or *Edit panel title* from the panel menu. 
+=======
+To make changes to the panel, put the dashboard in *Edit* mode, then select the edit option from the panel menu. 
+>>>>>>> d2bb346d77c... Review comments
 The changes you make appear in every dashboard that uses the panel.
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 
