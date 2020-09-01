@@ -821,9 +821,13 @@ The changes you make appear in every dashboard that uses the panel, except if yo
 To make changes to the panel, put the dashboard in *Edit* mode, then select *Edit visualization* or *Edit panel title* from the panel menu. 
 =======
 To make changes to the panel, put the dashboard in *Edit* mode, then select the edit option from the panel menu. 
+<<<<<<< HEAD
 >>>>>>> d2bb346d77c... Review comments
 The changes you make appear in every dashboard that uses the panel.
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+The changes you make appear in every dashboard that uses the panel, except if you edit the panel title. Changes to the panel title appear only on the dashboard where you made the change.
+>>>>>>> 48403d34408... Review comments
 
 [float]
 [[save-dashboards]]
