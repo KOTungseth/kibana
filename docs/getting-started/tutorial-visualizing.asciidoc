@@ -228,6 +228,7 @@ Now that you have the basics, you're ready to start exploring your own system da
 
 * To create maps that you can add to your dashboards, refer to <<maps,Maps>>.
 
+<<<<<<< HEAD
 * To create presentations of your live data, refer to <<canvas,Canvas>>.
 =======
 
@@ -260,3 +261,6 @@ Now that you have the basics, you're ready to start exploring your own system da
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
 =======
 >>>>>>> dcc824da204... Update docs/getting-started/tutorial-visualizing.asciidoc
+=======
+* To create presentations of your live data, refer to <canvas,Canvas>>.
+>>>>>>> b6b66f87729... Removed blocks
