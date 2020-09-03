@@ -186,7 +186,7 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 ^| X
 ^| X
 ^| X
-^| X
+|
 ^| X
 >>>>>>> d2bb346d77c... Review comments
 
@@ -505,5 +505,8 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 ^| X
 
 |===
+<<<<<<< HEAD
 
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+>>>>>>> b6fe3aeb7bf... Update docs/user/dashboard/aggregation-reference.asciidoc
