@@ -138,6 +138,7 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 ^| X
 ^| X
 ^| X
+<<<<<<< HEAD
 |
 ^| X
 =======
@@ -162,6 +163,9 @@ For information about Elasticsearch bucket aggregations, refer to {ref}/search-a
 
 | Range
 ^| X
+=======
+^| 
+>>>>>>> 45ffaea0da1... Review comments
 ^| X
 ^| X
 | 
@@ -220,6 +224,7 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 ^| X
 
 | Unique count (Cardinality)
+<<<<<<< HEAD
 ^| X
 ^| X
 ^| X
@@ -271,20 +276,22 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 | Type | Visualizations | Data table | Markdown | Lens | TSVB
 
 | Average and Sum 
+=======
+>>>>>>> 45ffaea0da1... Review comments
 ^| X
 ^| X
 ^| X
 ^| X
 ^| X
 
-| Cardinality
+| Max
 ^| X
 ^| X
 ^| X
 ^| X
 ^| X
 
-| Max and Min
+| Min
 ^| X
 ^| X
 ^| X
@@ -305,6 +312,7 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 | 
 ^| X
 
+<<<<<<< HEAD
 | Top hits 
 <<<<<<< HEAD
 | X
@@ -330,6 +338,9 @@ For information about Elasticsearch metrics aggregations, refer to {ref}/search-
 >>>>>>> da82b81df76... Fixes images and table
 | X
 =======
+=======
+| Top hit 
+>>>>>>> 45ffaea0da1... Review comments
 ^| X
 ^| X
 ^| X
@@ -389,6 +400,7 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 ^| X
 
 | Min bucket   
+<<<<<<< HEAD
 ^| X
 ^| X
 ^| X
@@ -438,6 +450,8 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 ^| X
 
 | Max and min bucket   
+=======
+>>>>>>> 45ffaea0da1... Review comments
 ^| X
 ^| X
 ^| X
@@ -470,7 +484,7 @@ For information about Elasticsearch pipeline aggregations, refer to {ref}/search
 ^| X
 ^| X
 ^| X
-^| X
+^| 
 ^| X
 >>>>>>> d2bb346d77c... Review comments
 

@@ -395,6 +395,7 @@ image:images/Dashboard_add_new_visualization.png[Example add new visualization t
 [[lens]]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Create panels with Lens
 
 *Lens* is the simplest and fastest way to create powerful visualizations of your data. To use *Lens*, you drag and drop as many data fields
@@ -403,6 +404,9 @@ image:images/Dashboard_add_new_visualization.png[Example add new visualization t
 =======
 === Create visualization panels with Lens
 >>>>>>> d1f399818b1... Fixes broken links and partinto error
+=======
+=== Create panels with Lens
+>>>>>>> 45ffaea0da1... Review comments
 
 *Lens* is the simplest and fastest way to create powerful visualizations of your data. To use *Lens*, you drag and drop as many data fields 
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh

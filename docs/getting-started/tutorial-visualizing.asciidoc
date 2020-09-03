@@ -105,6 +105,7 @@ image::images/tutorial-visualize-pie-3.png[Final pie chart]
 
 [float]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [role="xpack"]
 [[visualize-geographic-information]]
 === Visualize geographic information
@@ -119,6 +120,9 @@ To visualize geographic information in the log file data, use <<maps,Maps>>.
 
 .. Set the *End date* to `May 20, 2015 @ 12:00:00.000`.
 =======
+=======
+[role="xpack"]
+>>>>>>> 45ffaea0da1... Review comments
 [[visualize-geographic-information]]
 === Visualize geographic information
 
@@ -130,8 +134,12 @@ To visualize geographic information in the log file data, use <<maps,Maps>>.
 
 .. Set the *Start date* to `May 18, 2015 @ 12:00:00.000`.
 
+<<<<<<< HEAD
 .. Set the *End date* to May 20, 2015.
 >>>>>>> 99b56fdc915... [DOCS] Dashboard-first refresh
+=======
+.. Set the *End date* to `May 20, 2015 @ 12:00:00.000`.
+>>>>>>> 45ffaea0da1... Review comments
 +
 [role="screenshot"]
 image::images/gs_maps_time_filter.png[Time filter for Maps tutorial]
