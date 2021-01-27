@@ -54,7 +54,7 @@ image::images/lens_end_to_end_2_1_1.png[Donut chart with clientip and machine.os
 
 .. From the editor, click *Top values of machine.os.keyword*. 
 
-.. From the *Color palette* dropdown, select *Compability*.
+.. From the *Color palette* dropdown, select *Complimentary*.
 
 .. Click *Close*.
 +
@@ -70,6 +70,9 @@ image::images/lens_end_to_end_2_1.png[Donut chart with open config panel]
 .. Select *Add to dashboard after saving*.
 
 .. Click *Save and return*.
+
+If you already have existing visualizations created outside of Lens and want to make sure your dashboard
+uses a consistent coloring scheme, you can use the "Compatibility" palette.
 
 [discrete]
 [[mixed-multiaxis]]
