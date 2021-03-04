@@ -103,6 +103,9 @@ image::images/lens_end_to_end_3_1.png[Customize time interval]
 .. Click *Close*.
 
 . From the *Chart Type* dropdown, select *Area*.
++
+[role="screenshot"]
+image::images/lens_end_to_end_3_2.png[Area chart]
 
 [discrete]
 [[add-a-data-layer]]
@@ -113,12 +116,12 @@ To compare the average of bytes transfer to the number of users that visit your 
 . From the editor, click *+*.
 +
 [role="screenshot"]
-image::images/lens_end_to_end_3_2.png[Add new layer button]
+image::images/lens_end_to_end_3_3.png[Add new layer button]
 
 . From the new layer editor, click the *Chart type* dropdown, then click the line chart.
 +
 [role="screenshot"]
-image::images/lens_end_to_end_3_3.png[Change layer type]
+image::images/lens_end_to_end_3_4.png[Change layer type]
 +
 The chart type for the visualization changes to *Mixed XY*.
 
@@ -166,7 +169,7 @@ display the *Unique visitors* data along a second y-axis, then change the format
 .. From the *Value format* dropdown, select *Bytes (1024)*. 
 +
 [role="screenshot"]
-image::images/lens_end_to_end_3_4.png[Multiaxis chart]
+image::images/lens_end_to_end_3_5.png[Multiaxis chart]
 
 .. Click *Close*.
 
@@ -179,7 +182,7 @@ The visualization is done, but the legend uses a lot of space. Change the legend
 . From the *Legend* dropdown, select the top position.
 +
 [role="screenshot"]
-image::images/lens_end_to_end_3_5.png[legend position]
+image::images/lens_end_to_end_3_6.png[legend position]
 
 . Save the visualization, then add it to the dashboard.
 
@@ -190,6 +193,9 @@ image::images/lens_end_to_end_3_5.png[legend position]
 .. Select *Add to dashboard after saving*.
 
 .. Click *Save and return*.
++
+[role="screenshot"]
+image::images/lens_end_to_end_3_7.png[Final multiaxis chart]
 
 [discrete]
 [[percentage-stacked-area]]
@@ -274,6 +280,9 @@ image::images/lens_end_to_end_4_1.png[First filter in filters aggregation]
 .. Select *Add to dashboard after saving*.
 
 .. Click *Save and return*.
++
+[role="screenshot"]
+image::images/lens_end_to_end_4_4.png[Response codes chart]
 
 [discrete]
 [[histogram]]
@@ -315,6 +324,9 @@ image::images/lens_end_to_end_5_2.png[Create custom ranges]
 .. Select *Add to dashboard after saving*.
 
 .. Click *Save and return*.
++
+[role="screenshot"]
+image::images/lens_end_to_end_5_3.png[Hourly traffic distribution]
 
 [discrete]
 [[custom-ranges]]
@@ -426,7 +438,7 @@ Compare the top sources of website traffic data to the top three countries.
 [role="screenshot"]
 image::images/lens_end_to_end_7_2.png[Treemap vis]
 
-. To view only the Facebook and Twitter data, remove the *Other* category. 
+. To view only the 3 top countries, remove the *Other* category. 
 
 .. From the editor, click *Top values of geo.src*.
 
@@ -446,6 +458,9 @@ image::images/lens_end_to_end_7_3.png[Group other values as Other]
 .. Select *Add to dashboard after saving*.
 
 .. Click *Save and return*.
++
+[role="screenshot"]
+image::images/lens_end_to_end_7_4.png[Traffic source for top 3 countries chart]
 
 That's it! You've created a dashboard that provides you with a complete picture of your website data.
 
