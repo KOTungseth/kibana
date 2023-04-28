@@ -100,6 +100,32 @@ All columns that belong to the same layer pane group are sorted in the table.
 
 * *Color by value* &mdash; Applies color to the cell or text values. To change the color, click *Edit*. 
 
+. Click *Close*.
+
+[float]
+[[create-custom-metric-visualizations]]
+==== Create custom metric visualizations
+
+Metric visualizations display single values, and allow you to customize the color, value format, icon, and more.
+
+. From the *Visualization type* dropdown, select *Metric*. 
+
+. Drag the fields you want to visualize to the workspace. 
+
+. To change the display options, click a *Metrics* field in the layer pane, then configure the following options:
+
+* *Name* &mdash; Specifies the field display name. 
+
+* *Value format* &mdash; Specifies how the field value displays in the metric. 
+
+* *Color mode* &mdash; Specifies how color is applied.
+
+* *Icon decoration* &mdash; Specific the icon to display.
+
+* *Supporting visualization* &mdash; Specifies the visualization type to display in the metric.
+
+. Click *Close*.
+
 [float]
 [[drag-and-drop-keyboard-navigation]]
 ==== Create visualizations with keyboard navigation
@@ -175,18 +201,28 @@ Compare your real-time data to the results that are offset by a time increment. 
 For a time shift example, refer to <<compare-time-ranges>>.
 
 [float]
-[[multi-metric-partition-chart]]
-==== Build a partition chart from multiple metrics
+[[create-partition-charts-with-multiple-metrics]]
+==== Create partition charts with multiple metrics
 
-By default, partition charts (e.g. pie) are built from one or more "slice-by" dimensions to define the partitions and a single metric dimension to define their size. However, you can also build a partition chart from multiple metric dimensions.
+To create partition charts, such as pie charts, you configure one or more *Slice by* dimensions to define the partitions, and a *Metric* dimension to define the size. 
+To create partition charts with multiple metrics, use the layer settings. Multiple metrics are unsupported in mosaic visualizations.
 
-. Open the layer context menu at the top right of the layer panel.
+. In the layer pane, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu for the partition visualization layer], then select *Layer settings*.
 
-. Click *Layer settings*.
+. Select *Multiple metrics*.
 
-. Click the switch labeled *Multiple metrics*.
+[float]
+[[improve-visualization-loading-time]]
+==== Improve visualization loading time
 
-Note: this option is not available for mosaic charts.
+preview::[]
+
+Data sampling allows you to improve the visualization loading time. To improve the performance, you use a lower sampling percentage, which lowers the accuracy. 
+Use low sampling percentages on large datasets.
+
+. In the layer pane, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu for the partition visualization layer], then select *Layer settings*.
+
+. To select the *Sampling* percentage, use the slider.
 
 [float]
 [[add-annotations]]

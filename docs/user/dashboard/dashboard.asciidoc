@@ -11,34 +11,96 @@ that bring clarity to your data, tell a story about your data, and allow you to 
 [role="screenshot"]
 image:images/dashboard_ecommerceRevenueDashboard_7.15.0.png[Example dashboard]
 
-Panels display your data in charts, tables, maps, and more, which allow you to compare your data side-by-side to identify patterns and connections. Dashboards support several types of panels to display your data, and several options to create panels.
+Panels display your data in charts, tables, maps, and more, which allow you to compare your data side-by-side to identify patterns and connections. Dashboards support several types of panels that display your data.
 
-[cols="2"]
+[cols="50, 50"]
 |===
 
-| <<aggregation-reference,Editors>>
-| Use one of the editors to create visualizations of your data. Each editor varies in capabilities for all levels of analysts.
+a| *Tabular*
 
-| <<maps,Maps>>
-| Create beautiful displays of your geographical data.
+Tabular visualizations organize your data into tables, which are highly customizable and allow you to align the text, format the values, apply different colors to cell and text values, and more.
+You can use tables to display server configuration details, track counts, min, or max values for a specific field, and monitor the status of key services.
 
-| <<xpack-ml-anomalies,Anomaly swim lane>>
-| Display the results from machine learning anomaly detection jobs.
+| image:images/data_table.png[Data table]
 
-| <<xpack-ml-anomalies,Anomaly chart>>
-| Display an anomaly chart from the *Anomaly Explorer*.
+a| *Bar*
 
-| <<logs-app,Log stream>>
-| Display a table of live streaming logs.
+Displays bars side-by-side where each bar represents a category. Use bar charts to compare data across a
+large number of categories, display data that includes categories with negative values, and easily identify
+the categories that represent the highest and lowest values. {kib} also supports vertical bar charts.
 
-| <<add-controls,Tools>>
-| Add interactive filters with *Controls* panels.
+| image:images/bar.png[Bar chart]
 
-| <<add-text,Text>>
-| Add context to your panels with *Text*.
+a| *Goal and single value*
 
-| <<add-image,Image>>
-| Personalize your dashboard with a custom image.
+Goal and single value visualizations convey a clear understanding of how a specific indicator behaves. 
+The primary goal is to display a number of the most accurate, precise, and immediate value.
+
+| image:images/gauge.png[Gauge]
+
+a| *Line and area*
+
+Line and area charts allow you visualize trends in data over time. Use line and area charts to visualize your time series data. 
+
+Line charts display your data as a series of ordered measurement points, typically by the x-axis values, which are connected by segments of straight lines. 
+
+Area charts are similar, but the space below the line is shaded.
+
+| image:images/area.png[Area chart]
+
+a| *Magnitude*
+
+Displays graphical representations of data where the individual values are represented by colors. Use heat maps when your data set includes
+categorical data. For example, use a heat map to see the flights of origin countries compared to destination countries using the sample flight data.
+
+| image:images/heat_map.png[Heat map]
+
+a| *Map*
+
+Create beautiful displays of your geographical data. For more information, check <<maps,Maps>>.
+
+| image:
+
+a| *Proportion*
+
+Displays slices that represent a data category, where the slice size is proportional to the quantity it represents.
+Use pie charts to show comparisons between multiple categories, illustrate the dominance of one category over others,
+and show percentage or proportional data.
+
+| image:images/pie.png[Pie chart]
+
+a| *Tag cloud*
+
+Graphical representations of how frequently a word appears in the source text. Use tag clouds to easily produce a summary of large documents and
+create visual art for a specific topic.
+
+| image:images/tag_cloud.png[Tag cloud]
+
+a| *Machine Learning*
+Display the results from <<xpack-ml-anomalies,anomaly detection jobs>> and display <<xpack-ml-anomalies,anomaly charts>> from the *Anomaly Explorer*.
+
+| image:
+
+a| *Observability*
+Display a <<logs-app,log stream>> table of live streaming logs.
+
+| image:
+
+| *Tools*
+Add interactive filters with <<add-controls,*Controls*>> panels.
+
+| image:
+
+| *Text*
+Add context to your panels with <<add-text,*Text*>>.
+
+| image:
+
+| *Images*
+
+Personalize your dashboard with custom <<add-image,images>>.
+
+| image:
 
 |===
 
