@@ -1,0 +1,24 @@
+[[create-panels]]
+= Create panels
+
+{kib} provides you with several visualization editors to create panels of your data. 
+Each editor supports different features and {ref}/search-aggregations.html[{es} aggregations]. 
+
+[float]
+[[choose-the-best-panel-type-for-your-data]]
+== Choose the panel type for your data
+
+{kib} supports several panel types to display your data. 
+
+* Visualizations
+
+* Text
+
+* Images
+
+--
+include::lens.asciidoc[]
+
+include::create-text-panels.asciidoc[]
+
+include::create-image-panels.asciidoc[]
