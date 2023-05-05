@@ -251,10 +251,9 @@ hover your mouse over the *Actions* column for filters and other options.
 [[save-your-search]]
 === Save your search for later use
 
-Save your search so you can use it later, generate a CSV report, or use it to create visualizations, dashboards, and Canvas workpads.
-Saving a search saves the query text, filters,
-and current view of *Discover*, including the columns selected in
-the document table, the sort order, and the {data-source}.
+Save your search so you can use it later, generate a CSV report, or use it to create visualizations to display on dashboards and Canvas workpads.
+Saving a search saves the query text, filters, and current view of *Discover*, including the columns selected in
+the document table, the sort order, and the {data-source}. When you add visualizations of search results to dashboards, the results are not aggregated.
 
 . In the toolbar, click **Save**.
 
@@ -283,8 +282,7 @@ image:images/discover-from-visualize.png[Visualization that opens from Discover 
 . Save your visualization for use on a dashboard.
 +
 For geo point fields (image:images/geoip-icon.png[Geo point field icon, width=20px]),
-if you click **Visualize**,
-your data appears in a map.
+if you click **Visualize**, your data appears in a map.
 +
 [role="screenshot"]
 image:images/discover-maps.png[Map containing documents]

@@ -1,0 +1,51 @@
+[[edit-dashboards-and-panels]]
+= Edit dashboards and panels
+
+[float]
+[[eit-the-dashboard-settings]]
+== Edit the dashboard settings
+
+Apply a set of design options to the entire dashboard.
+
+. In the toolbar, click *Settings*, to open the *Dashboard settings* flyout, then use the following options:
+
+* *Use margins between panels* &mdash; Adds a margin of space between each panel.
+
+* *Show panel titles* &mdash; Displays the titles in the panels headers.
+
+* *Sync color pallettes across panels* &mdash; Applies the same color palette to all panels on the dashboard.
+
+* *Sync cursor across panels* &mdash; When you hover your cursor over a *Lens*, *TSVB*, aggregation-based, or *Timelion* XY chart and a heatmap chart, the cursor on all other related dashboard charts automatically appear.
+
+* *Sync tooltips across panels* &mdash; When you hover your cursor over a *Lens*, *TSVB*, aggregation-based, or *Timelion* XY chart, the tooltips on all other related dashboard charts automatically appear.
+
+
+If you are saving an existing dashboard, click *Save*.
+
+To exit *Edit* mode, click *Switch to view mode*. 
+
+[float]
+[[edit-panels]]
+== Edit panels
+
+To make changes to the panel, use the panel menu options.
+
+. In the toolbar, click *Edit*.
+
+. Open the panel menu, then use the following options:
+
+* *Edit lens* &mdash; Opens *Lens* so you can make changes to the visualization. 
+
+* *Edit visualization* &mdash; Opens the editor so you can make changes to the panel. 
++
+To make changes without changing the original version, open the panel menu, then click *More > Unlink from library*.
+
+* *Convert to Lens* &mdash; Opens *TSVB* and aggregation-based visualizations in *Lens*.
+
+* *Edit panel settings* &mdash; Opens the *Panel settings* window to change the *title*, *description*, and *time range*.
+
+* *More > Replace panel* &mdash; Opens the *Visualize Library* so you can select a new panel to replace the existing panel.
+
+* *More > Delete from dashboard* &mdash; Removes the panel from the dashboard. 
++
+If you want to use the panel later, make sure that you save the panel to the *Visualize Library*.  

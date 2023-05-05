@@ -11,7 +11,8 @@ that bring clarity to your data, tell a story about your data, and allow you to 
 [role="screenshot"]
 image:images/dashboard_ecommerceRevenueDashboard_7.15.0.png[Example dashboard]
 
-Panels display your data in charts, tables, maps, and more, which allow you to compare your data side-by-side to identify patterns and connections. Dashboards support several types of panels that display your data.
+Panels display your data in charts, tables, maps, and more, which allow you to compare your data side-by-side to identify patterns and connections. 
+Dashboards support several types of panels that display your data.
 
 [cols="50, 50"]
 |===
@@ -26,93 +27,90 @@ You can use tables to display server configuration details, track counts, min, o
 a| *Bar*
 
 Displays bars side-by-side where each bar represents a category. Use bar charts to compare data across a
-large number of categories, display data that includes categories with negative values, and easily identify
-the categories that represent the highest and lowest values. {kib} also supports vertical bar charts.
+large number of categories, display categorial data with negative values, and easily identify
+the categories that represent the highest and lowest values. {kib} supports horizontal, vertical, stacked, and percentage bar charts.
 
 | image:images/bar.png[Bar chart]
 
 a| *Goal and single value*
 
 Goal and single value visualizations convey a clear understanding of how a specific indicator behaves. 
-The primary goal is to display a number of the most accurate, precise, and immediate value.
+The primary goal is to display a number of the most accurate, precise, and immediate value. 
+{kib} supports gauge horizontal, gauge vertical, and metric visualizations.
 
-| image:images/gauge.png[Gauge]
+| image:images/lens_metricVisualization_8.8.0.png[Metric visualization that displays the median of bytes with a maximum value of memory]
 
 a| *Line and area*
 
 Line and area charts allow you visualize trends in data over time. Use line and area charts to visualize your time series data. 
-
 Line charts display your data as a series of ordered measurement points, typically by the x-axis values, which are connected by segments of straight lines. 
-
-Area charts are similar, but the space below the line is shaded.
+Area charts are similar, but the space below the line is shaded. {kib} supports stacked and percentage area charts.
 
 | image:images/area.png[Area chart]
 
 a| *Magnitude*
 
-Displays graphical representations of data where the individual values are represented by colors. Use heat maps when your data set includes
-categorical data. For example, use a heat map to see the flights of origin countries compared to destination countries using the sample flight data.
+Displays graphical representations of data in heat map visualizations, where the individual values are represented by colors. Use heat maps when your data set includes
+categorical data.
 
-| image:images/heat_map.png[Heat map]
+| image:images/lens_magnitudeHeatmap_8.8.0.png[Heat map that displays the flights of origin countries compared to destination countries]
 
 a| *Map*
 
 Create beautiful displays of your geographical data. For more information, check <<maps,Maps>>.
 
-| image:
+| image:images/lens_regionMap_8.8.0.png[Region map that displays the flights from origin countries by total number of Records]
 
 a| *Proportion*
 
-Displays slices that represent a data category, where the slice size is proportional to the quantity it represents.
-Use pie charts to show comparisons between multiple categories, illustrate the dominance of one category over others,
-and show percentage or proportional data.
+Displays the relative size of data categories compared to the proportion or percentage of a whole. 
+Use proportional visualizations to show complex categorical data, and help to quickly identify patterns and trends. 
+{kib} supports donut, mosaic, pie, treemap, and waffle visualizations.
 
 | image:images/pie.png[Pie chart]
 
 a| *Tag cloud*
 
-Graphical representations of how frequently a word appears in the source text. Use tag clouds to easily produce a summary of large documents and
+Displays graphical representations of how frequently a word appears in the data source. Use tag cloud visualizations to show a summary of large documents and
 create visual art for a specific topic.
 
-| image:images/tag_cloud.png[Tag cloud]
+| image:images/aggregationBased_tagCloud_8.8.0.png[Tag cloud that displays the tags.keyword terms bucket aggregation]
 
 a| *Machine Learning*
-Display the results from <<xpack-ml-anomalies,anomaly detection jobs>> and display <<xpack-ml-anomalies,anomaly charts>> from the *Anomaly Explorer*.
 
-| image:
+Displays machine learning anomaly detection results in a timeline or chart. For detailed information, check <<xpack-ml-anomalies,Anomaly detection>>.
 
-a| *Observability*
-Display a <<logs-app,log stream>> table of live streaming logs.
+| image:images/machineLearning_anomalyChart_8.8.0.png[Tag cloud that displays the tags.keyword terms bucket aggregation]
 
-| image:
+a| *Log stream*
 
-| *Tools*
-Add interactive filters with <<add-controls,*Controls*>> panels.
+Displays a table of live streaming logs. For detailed information, check <<logs-app,log stream>>.
 
-| image:
+| image:images/machineLearning_anomalyChart_8.8.0.png[Table of live streaming logs for the Kibana sample web logs data]
+
+| *Interactive filter controls*
+
+Displays dropdown and slider filter controls that allow you to interact with your dashboard data.
+
+| image:images/dashboard_controls_8.8.0.png[Interactive control filters for Source Country, OS, and Bytes]
 
 | *Text*
-Add context to your panels with <<add-text,*Text*>>.
 
-| image:
+Displays panels of text to add context to the other panels on your dashboard.
+
+| image:images/dashboard_textPanel_8.8.0.png[Text panel that describes the purpose of the Logs Web Traffic sample data dashboard]
 
 | *Images*
 
-Personalize your dashboard with custom <<add-image,images>>.
+Personalize your dashboard with images, such as icons and logos.
 
-| image:
+| image:images/dashboard_imagePanel_8.8.0.png[Image panel that displays an example icon for charts]
 
 |===
 
 [float]
-[[create-dashboards]]
-== Create dashboards
-
-Dashboards provide you with the space where you add panels of your data.
-
-[float]
 [[dashboard-minimum-requirements]]
-=== Minimum requirements
+== Minimum requirements
 
 To create dashboards, you must meet the minimum requirements. 
 
@@ -125,10 +123,10 @@ to create or save dashboards, and the options to create and save dashboards are 
 refer to <<xpack-security-authorization,Granting access to {kib}>>.
 
 [float]
-[[open-the-dashboard]]
-=== Open the dashboard
+[[create-dashboards]]
+== Create dashboards
 
-Begin with an empty dashboard, or open an existing dashboard.
+Dashboards provide you with the space where you add and display panels of your data. Begin with an empty dashboard, or open an existing dashboard.
 
 . Open the main menu, then click *Dashboard*.
 
@@ -142,186 +140,29 @@ When you create a dashboard, you are automatically in edit mode and can make cha
 +
 When you open an existing dashboard, you are in view mode. To make changes to the dashboard, click *Edit* in the toolbar. 
 
-[float]
-[[create-panels-with-lens]]
-=== Create and add panels
-
-You create panels using the editors, which you can access from the dashboard toolbar or the *Visualize Library*, or add panels that are saved in the *Visualize Library*, or search results from <<save-your-search,*Discover*>>.
-
-To create panels from the dashboard toolbar, use one of the following options:
-
-* *Create visualization* &mdash; Opens the drag-and-drop editor, which is the recommended way to create visualization panels.
-
-* *Select type* &mdash; Opens the menu for all of the editors and panel types. 
-
-To create panels from the *Visualize Library*:
-
-. Open the main menu, then click *Visualize Library*.
-
-. Click *Create visualization*, then select an editor. 
-
-To add existing panels from the *Visualize Library*:
-
-. In the dashboard toolbar, click *Add from library*.
-
-. Click the panel you want to add to the dashboard, then click *X*.
-+
-When a panel contains a saved query, both queries are applied.
-+
-When you add search results from *Discover* to dashboards, the results are not aggregated.
-
 [[tsvb]]
 
 [float]
-[[save-panels]]
-=== Save and add panels
+[[create-panels-with-lens]]
+== Add panels to the dashboard
 
-Consider where you want to save and add the panel in {kib}.
+The dashboard toolbar provides you with several options to add panels to dashboards.
 
-[float]
-[[save-to-visualize-library]]
-==== Save to the Visualize Library
+To add panels, choose from the following options:
 
-To use the panel on other dashboards and *Canvas* workpads, save the panel to the *Visualize Library*. When panels are saved in the *Visualize Library*, image:dashboard/images/visualize-library-icon.png[Visualize Library icon] appears in the panel header.
+* *Create visualization* &mdash; Opens the drag-and-drop visualization editor, which is the recommended way to create visualization panels of your data.
 
-If you created the panel from the dashboard:
+* *Text* &mdash; When you click image:images/dashboard_createNewTextButton_7.15.0.png[Text icon in the dashboard toolbar], opens the markdown editor.
 
-. In the editor, click *Save to library*.
+* *Image* &mdash; When you click image:images/dashboard_createNewImageButton_8.7.0.png[Image icon in the dashboard toolbar], opens the *Add image* flyout.
 
-. Enter the *Title* and add any applicable <<managing-tags,*Tags*>>.
+* *Maps* &mdash; When you click image:images/dashboard_createNewMapButton_8.8.0.png[Maps icon in the dashboard toolbar], opens the map visualization editor.
 
-. Make sure that *Add to Dashboard after saving* is selected.
+* *Select type* &mdash; Opens the menu for all supported visualization editors and panel types. 
 
-. Click *Save and return*.
+* *Add from library* &mdash; Allows you to add visualizations from the *Visualize Library*.
 
-If you created the panel from the *Visualize Library*:
-
-. In the editor, click *Save*.
-
-. On the *Save* window, enter the *Title*.
-
-. Choose one of the following options:
-
-* To save the panel to a dashboard and the *Visualize Library*, select *Add to library*, add any applicable <<managing-tags,*Tags*>>, then click *Save and go to Dashboard*.
-
-* To save the panel only to the *Visualize Library*, select *None*, add any applicable <<managing-tags,*Tags*>>, then click *Save and add to library*.
-
-[float]
-[[save-to-the-dashboard]]
-==== Save to the dashboard
-
-Return to the dashboard and add the panel without specifying the save options or adding the panel to the *Visualize Library*. 
-
-If you created the panel from the dashboard:
-
-. In the editor, click *Save and return*.
-
-. Add an optional title to the panel.
-
-.. In the panel header, click *No Title*.
-
-.. On the *Panel settings* window, select *Show title*.
-
-.. Enter the *Title*, then click *Save*.
-
-If you created the panel from the *Visualize Library*:
-
-. Click *Save*.
-
-. On the *Save* window, enter the *Title*.
-
-. Choose one of the following options:
-
-* If you want to add the panel to an existing dashboard, select *Existing*, select the dashboard from the dropdown, then click *Save and go to Dashboard*.
-
-* If you want to add the panel to a new dashboard, select *New*, then click *Save and go to Dashboard*.
-
-To add unsaved dashboard panels to the *Visualize Library*:
-
-. Open the panel menu, then select *More > Save to library*.
-
-. Enter the panel title, then click *Save*.
-
-[float]
-[[add-text]]
-== Add context to panels
-
-To provide context to your dashboard panels, add *Text* panels that display important information, instructions, images, and more. You create *Text* panels using GitHub-flavored Markdown text.
-
-. On the dashboard, click image:images/dashboard_createNewTextButton_7.15.0.png[Create New Text button in dashboard toolbar].
-
-. In the *Markdown* field, enter the text, then click *Update*.
-
-For example, when you enter:
-
-[role="screenshot"]
-image::images/markdown_example_1.png[Markdown text with links]
-
-The following instructions are displayed:
-
-[role="screenshot"]
-image::images/markdown_example_2.png[Panel with markdown link text]
-
-Or when you enter:
-
-[role="screenshot"]
-image::images/markdown_example_3.png[Markdown text with image file]
-
-The following image is displayed:
-
-[role="screenshot"]
-image::images/markdown_example_4.png[Panel with markdown image]
-
-For detailed information about writing on GitHub, click *Help*.
-
-[float]
-[[save-the-markdown-panel]]
-=== Save and add the panel
-
-Save the panel to the *Visualize Library* and add it to the dashboard, or add it to the dashboard without saving.
-
-To save the panel to the *Visualize Library*:
-
-. Click *Save to library*.
-
-. Enter the *Title* and add any applicable <<managing-tags,*Tags*>>.
-
-. Make sure that *Add to Dashboard after saving* is selected.
-
-. Click *Save and return*.
-
-To save the panel to the dashboard:
-
-. Click *Save and return*.
-
-. Add an optional title to the panel.
-
-.. In the panel header, click *No Title*.
-
-.. On the *Panel settings* window, select *Show title*.
-
-.. Enter the *Title*, then click *Save*.
-
-[float]
-[[add-image]]
-== Add image panels
-
-To personalize your dashboards, add your own logos and graphics with the *Image* panel. You can upload images from your computer, select previously uploaded images, or add images from an external link.
-
-. On the dashboard, click image:images/dashboard_createNewImageButton_8.7.0.png[Create New Image button in dashboard toolbar].
-. Use the editor to add an image.
-
-[role="screenshot"]
-image::images/dashboard_addImageEditor_8.7.0.png[Add image editor]
-
-To manage your uploaded image files, open the main menu, then click *Stack Management > Kibana > Files*. 
-
-
-[WARNING]
-============================================================================
-When you export a dashboard, the uploaded image files are not exported. 
-When importing a dashboard with an image panel, and the image file is unavailable, the image panel displays a `not found` warning. Such panels have to be fixed manually by re-uploading the image using the panel's image editor.
-============================================================================
+* *Controls* &mdash; Opens the menu for the interactive filter control options. 
 
 [float]
 [[arrange-panels]]
@@ -329,60 +170,30 @@ When importing a dashboard with an image panel, and the image file is unavailabl
 [[resizing-containers]]
 == Arrange panels
 
-Compare the data in your panels side-by-side, organize panels by priority, resize the panels so they all appear immediately on the dashboard, and more.
+Organize panels on the dashboard by priority, resize panels, and more.
 
-In the toolbar, click *Edit*, then use the following options:
+To arrange panels, use the following options:
 
 * To move, click and hold the panel header, then drag to the new location.
 
 * To resize, click the resize control, then drag to the new dimensions.
 
-* To maximize to fullscreen, open the panel menu, then click *More > Maximize panel*.
-
-[float]
-[[edit-panels]]
-== Edit panels
-
-To make changes to the panel, use the panel menu options.
-
-. In the toolbar, click *Edit*.
-
-. Open the panel menu, then use the following options:
-
-* *Edit lens* &mdash; Opens *Lens* so you can make changes to the visualization. 
-
-* *Edit visualization* &mdash; Opens the editor so you can make changes to the panel. 
-+
-To make changes without changing the original version, open the panel menu, then click *More > Unlink from library*.
-
-* *Convert to Lens* &mdash; Opens *TSVB* and aggregation-based visualizations in *Lens*.
-
-* *Edit panel settings* &mdash; Opens the *Panel settings* window to change the *title*, *description*, and *time range*.
-
-* *More > Replace panel* &mdash; Opens the *Visualize Library* so you can select a new panel to replace the existing panel.
-
-* *More > Delete from dashboard* &mdash; Removes the panel from the dashboard. 
-+
-If you want to use the panel later, make sure that you save the panel to the *Visualize Library*.  
-
 [float]
 [[duplicate-panels]]
 == Duplicate panels
 
-To duplicate a panel and the configured functionality, use the clone and copy panel options. Cloned and copied panels replicate all of the functionality from the original panel, 
+To duplicate panels and the configured functionality, use the clone and copy panel options. Cloned and copied panels replicate all of the functionality from the original panel, 
 including renaming, editing, and cloning. 
 
 [float]
 [[clone-panels]]
 === Clone panels
 
-Cloned panels appear next to the original panel, and move the other panels to provide a space on the dashboard.
+Cloned panels appear next to the original panel, and move the other panels to provide space on the dashboard.
 
-. In the toolbar, click *Edit*.
+. Open the panel menu.
 
-. Open the panel menu, then select *Clone panel*. 
-+
-When cloned panels are saved in the *Visualize Library*, image:dashboard/images/visualize-library-icon.png[Visualize Library icon] appears in the header.
+. Select *Clone panel*.
 
 [float]
 [[copy-to-dashboard]]
@@ -390,60 +201,19 @@ When cloned panels are saved in the *Visualize Library*, image:dashboard/images/
 
 Copy panels from one dashboard to another dashboard.
 
+. Open the dashboard that contains the panel you want to copy.
+
+. In the toolbar, click *Edit*.
+
 . Open the panel menu, then select *More > Copy to dashboard*.
 
-. On the *Copy to dashboard* window, select the dashboard, then click *Copy and go to dashboard*.
-
-[float]
-[[search-or-filter-your-data]]
-== Search and filter your data
-
-{kib} supports several ways to search your data and apply {es} filters. You can combine the filters with any panel
-filter to display the data want to you see.
-
-For more information about {kib} and {es} filters, refer to <<kibana-concepts-analysts,{kib} concepts>>.
-
-To apply a panel-level time filter:
-
-. Open the panel menu, then select *More > Edit panel settings*.
-
-. Select *Apply a custom time range*.
-
-. Enter the time range you want to view, then click *Save*.
-
-To view and edit panel-level filters:
-
-. On the panel, click image:images/dashboard_panelFiltersButton_8.7.0.png[Panel filters button on panel header].
-
-. To edit, click *Edit filters*.
-
-[float]
-[[apply-design-options]]
-== Apply design options
-
-Apply a set of design options to the entire dashboard.
-
-. If you're in view mode, click *Edit* in the toolbar.
-
-. In the toolbar, click *Settings*, to open the *Dashboard settings* flyout, then use the following options:
-
-* *Use margins between panels* &mdash; Adds a margin of space between each panel.
-
-* *Show panel titles* &mdash; Displays the titles in the panels headers.
-
-* *Sync color pallettes across panels* &mdash; Applies the same color palette to all panels on the dashboard.
-
-* *Sync cursor across panels* &mdash; When you hover your cursor over a *Lens*, *TSVB*, aggregation-based, or *Timelion* XY chart and a heatmap chart, the cursor on all other related dashboard charts automatically appear.
-
-* *Sync tooltips across panels* &mdash; When you hover your cursor over a *Lens*, *TSVB*, aggregation-based, or *Timelion* XY chart, the tooltips on all other related dashboard charts automatically appear.
+. On the *Copy to dashboard* window, select the dashboard for where you want to display the copied panel, then click *Copy and go to dashboard*.
 
 [float]
 [[save-dashboards]]
 == Save dashboards
 
-When you've finished making changes to the dashboard, save it.
-
-If you are saving a new dashboard:
+To share the dashboard with others in your organization, save the dashboard.
 
 . In the toolbar, click *Save*.
 
@@ -455,43 +225,23 @@ If you are saving a new dashboard:
 
 . Click *Save*.
 
-If you are saving an existing dashboard, click *Save*.
-
-To exit *Edit* mode, click *Switch to view mode*. 
-
-[float]
-[[download-csv]]
-== View the panel data and requests
-
-View the data in visualizations and the requests that collect the data. 
-
-. Open the panel menu, then click *More > Inspect*.
-
-. View and download the panel data.
-
-.. Open the *View* dropdown, then click *Data*.
-
-.. Click *Download CSV*, then select the format type from the dropdown:
-
-* *Formatted CSV* &mdash; Contains human-readable dates and numbers.
-
-* *Unformatted* &mdash; Best used for computer use.
-+
-When you download visualization panels with multiple layers, each layer produces a CSV file, and the file names contain the visualization and layer {data-source} names.
-
-. View the requests that collect the data.
-
-.. Open the *View* dropdown, then click *Requests*.
-
-.. From the dropdown, select the requests you want to view.
-
-.. To view the requests in *Console*, click *Request*, then click *Open in Console*.
-
 [float]
 [[share-the-dashboard]]
 == Share dashboards
 
-To share the dashboard with a larger audience, click *Share* in the toolbar. For detailed information about the sharing options, refer to <<reporting-getting-started,Reporting>>.
+Share the dashboard with others in your organization. For detailed information about the share options, check <<reporting-getting-started,Reporting>>.
+
+. In the toolbar, click *Share*. 
+
+. On the *Share this dashboard* window, choose from the following options:
+
+* *Embed code* &mdash; Embed fully interactive dashboards as an iframe on web pages.
+
+* *Get links* &mdash; Share direct links to dashboards.
+
+* *PDF Reports* &mdash; Generate and download PDF files of dashboards.
+
+* *PNG Reports* &mdash; Generate and download PNG files of dashboards.
 
 [float]
 [[import-dashboards]]
@@ -499,13 +249,25 @@ To share the dashboard with a larger audience, click *Share* in the toolbar. For
 
 To automate {kib}, you can export dashboards as NDJSON using the <<saved-objects-api-export, Export objects API>>. It is important to export dashboards with all necessary references.
 
---
-include::tutorial-create-a-dashboard-of-lens-panels.asciidoc[]
+[WARNING]
+============================================================================
+When you export dashboards, {kib} is unable to export uploaded image files. 
+When you import dashboards with unavailable image panels, the image panel displays a `not found` warning. To import the dashboard with the image panel, re upload the image. For more information about image panels, check <<add-image,Create image panels>>.
+============================================================================
 
-include::lens-advanced.asciidoc[]
+--
+include::create-panels.asciidoc[]
 
 include::create-panels-with-editors.asciidoc[]
 
 include::make-dashboards-interactive.asciidoc[]
+
+include::save-panels.asciidoc[]
+
+include::tutorial-create-a-dashboard-of-lens-panels.asciidoc[]
+
+include::lens-advanced.asciidoc[]
+
+include::edit-dashboards-and-panels.asciidoc[]
 
 include::dashboard-troubleshooting.asciidoc[]

@@ -1,25 +1,9 @@
 [[lens]]
-=== Create visualizations with Lens
-++++
-<titleabbrev>Lens</titleabbrev>
-++++
+=== Create visualization panels
 
-To create a visualization, drag the data fields you want to visualize to the workspace, then *Lens* uses visualization best practices to apply the fields and create a visualization that best displays the data. 
+Drag the data fields you want to visualize to the workspace, then *Lens* uses visualization best practices to apply the fields and create a visualization that best displays the data. 
 
-With *Lens*, you can:
-
-* Create area, line, and bar charts with layers to display multiple indices and chart types.
-* Change the aggregation function to change the data in the visualization.
-* Create custom tables.
-* Perform math on aggregations using *Formula*.
-* Use time shifts to compare the data in two time intervals, such as month over month.
-* Add annotations and reference lines.
-
-[float]
-[[create-the-visualization-panel]]
-==== Create visualizations
-
-If you're unsure about the visualization type you want to use, or how you want to display the data, drag the fields you want to visualize onto the workspace, then let *Lens* choose for you. 
+If you're unsure about the visualization type you want to use, or how you want to display the data, drag the fields you want to visualize onto the workspace, then let the editor choose for you. 
 
 If you already know the visualization type you want to use, and how you want to display the data, use the following process.
 

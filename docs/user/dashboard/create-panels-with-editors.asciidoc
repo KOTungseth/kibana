@@ -1,7 +1,7 @@
 [[aggregation-reference]]
 == Create panels with editors
 
-{kib} provides several editors that you can use to create panels of your data. Each editor supports different features and {ref}/search-aggregations.html[{es} aggregations]. To choose the best editor for your data, review the following information.
+To choose the best editor for your data, review the following information.
 
 [float]
 [[chart-types]]

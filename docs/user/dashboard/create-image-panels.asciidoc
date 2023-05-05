@@ -1,0 +1,21 @@
+[float]
+[[add-image]]
+== Create image panels
+
+To personalize your dashboards, add *Image* panels that display custom icons, logos, and more. You can upload images from your computer, select previously uploaded images, or add images from external links.
+
+. Open or create a dashboard. 
+
+. In the dashboard toolbar, click image:images/dashboard_createNewImageButton_8.7.0.png[Create New Image button in dashboard toolbar].
+
+. On the *Add image* flyout, use the following options:
+
+* *Upload* &mdash; Allows you to display an image that you upload from your computer, or use a previously uploaded image.
+
+* *Use link* &mdash; Allows you to display an image using a link. 
+
+. Configure the image settings and enter an optional *Description*. 
+
+. Click *Save*.
+
+To manage uploaded images, open the main menu, then click *Stack Management > Kibana > Files*. 

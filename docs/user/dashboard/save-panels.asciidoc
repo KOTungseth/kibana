@@ -1,0 +1,69 @@
+[float]
+[[save-panels]]
+=== Save and add panels
+
+Consider where you want to save and add the panel in {kib}.
+
+[float]
+[[save-to-visualize-library]]
+==== Save to the Visualize Library
+
+To use the panel on other dashboards and *Canvas* workpads, save the panel to the *Visualize Library*. When panels are saved in the *Visualize Library*, image:dashboard/images/visualize-library-icon.png[Visualize Library icon] appears in the panel header.
+
+If you created the panel from the dashboard:
+
+. In the editor, click *Save to library*.
+
+. Enter the *Title* and add any applicable <<managing-tags,*Tags*>>.
+
+. Make sure that *Add to Dashboard after saving* is selected.
+
+. Click *Save and return*.
+
+If you created the panel from the *Visualize Library*:
+
+. In the editor, click *Save*.
+
+. On the *Save* window, enter the *Title*.
+
+. Choose one of the following options:
+
+* To save the panel to a dashboard and the *Visualize Library*, select *Add to library*, add any applicable <<managing-tags,*Tags*>>, then click *Save and go to Dashboard*.
+
+* To save the panel only to the *Visualize Library*, select *None*, add any applicable <<managing-tags,*Tags*>>, then click *Save and add to library*.
+
+[float]
+[[save-to-the-dashboard]]
+==== Save to the dashboard
+
+Return to the dashboard and add the panel without specifying the save options or adding the panel to the *Visualize Library*. 
+
+If you created the panel from the dashboard:
+
+. In the editor, click *Save and return*.
+
+. Add an optional title to the panel.
+
+.. In the panel header, click *No Title*.
+
+.. On the *Panel settings* window, select *Show title*.
+
+.. Enter the *Title*, then click *Save*.
+
+If you created the panel from the *Visualize Library*:
+
+. Click *Save*.
+
+. On the *Save* window, enter the *Title*.
+
+. Choose one of the following options:
+
+* If you want to add the panel to an existing dashboard, select *Existing*, select the dashboard from the dropdown, then click *Save and go to Dashboard*.
+
+* If you want to add the panel to a new dashboard, select *New*, then click *Save and go to Dashboard*.
+
+To add unsaved dashboard panels to the *Visualize Library*:
+
+. Open the panel menu, then select *More > Save to library*.
+
+. Enter the panel title, then click *Save*.
