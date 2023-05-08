@@ -1,16 +1,15 @@
 [[lens]]
 == Create visualization panels
-
-Drag the data fields you want to visualize to the workspace, and the visualization editor uses best practices to apply the fields and create a visualization that best displays your data. 
+With the drag-and-drop visuaization editor, you can create a variety of visualizations to display your data. 
 
 [float]
 [[find-your-lens-data]]
 === Find your data
-Tell Kibana where to find the data you want to visualize, then specify the time range.
+Tell {kib} where to find the data you want to visualize, then specify the time range.
 
 . Open the main menu, then select *Dashboard*.
 
-. Open or create the dashboard. 
+. Open or create a dashboard. 
 
 . On the dashboard, click *Create visualization*.
 
@@ -19,10 +18,12 @@ Tell Kibana where to find the data you want to visualize, then specify the time 
 {kib} uses <<data-views,{data-sources}>> to find your {es} data.
 To view the ecommerce sample data, open the {data-source} menu, and then select **Kibana Sample Data Ecommerce**.
 +
-To create a data view for your own data, click *Create a data view*.
-For details, check <<data-views, Create a data view.>>
+To create a {data-source} for your own data, click *Create a data view*.
+For details, check <<data-views, Create a {data-source}>>.
++
+To learn about the data in a field, click the field.
 
-. Specify the <<set-time-filter,time range>>.
+. Adjust the <<set-time-filter,time range>> to view data for the *Last 7 days*.
 +
 The range selection is based on the default time field in your data.
 If you are using the sample data, the value is set for when you added the data.
@@ -31,142 +32,63 @@ If you are using your own data, and it does not have a time field, the range sel
 [float]
 [[visualize-the-fields-in-your-data]]
 === Visualize the fields in your data
-If you already know the visualization you want to use, select the visualization. If you're unsure about the visualization type you want to use, 
-drag the fields you want to visualize onto the workspace, then let the editor choose for you. 
+The drag-and-drop visualization editor allows you to drag the fields you want to visualize to the workspace, then uses best practices to create a 
+visualization that best displays your data.
 
-. Open the *Visualization type* dropdown, then select the visualization you want to use.  
+TIP: You can manually apply the changes you make, which is helpful when creating large and complex visualizations. To manually apply your changes, 
+click *Settings* in the toolbar, then deselect *Auto-apply visualization changes*.
 
-. To view more visualizations that *Lens* automatically created for the fields, click *Suggestions*. If one of the *Suggestions* meets your visualization needs, click *Save and return* to add it to the dashboard.
+. Drag the *products.price* field to the workspace.
 
-Choose the data you want to visualize.
+. In the layer pane, click *Median of products.price*, then click the *Average* function.
 
-. Drag the fields directly to the layer pane. *Lens* automatically selects the aggregation function.
+. In the *Name* field, enter `Average price`, then click *Close*.
 
-. If you want to learn more about the data a field contains, click the field.
+. Open the *Visualization type* dropdown, then select *Area*.
 
-. To visualize more than one {data-source}, click *Add layer*, select the layer type, then select the {data-source}.
+Create visualization layers.
 
-Edit and delete.
+. In the layer pane, click *Add layer > Visualization*.
 
-. To change the aggregation *Quick function* and display options, click the field in the layer pane. 
+. Drag the *customer_id* field to the *Vertical Axis* field in the second layer, then click *Unique count of customer_id*.
 
-. To delete a field, close the configuration options, then click *X* next to the field.
+.. In the *Name* field, enter `Number of customers`.
 
-. To duplicate a layer, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu to duplicate Lens visualization layers] in the layer pane, then select *Duplicate layer*.
+.. In the *Series color* field, enter `#D36086`.
 
-. To clear the layer configuration, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu to clear Lens visualization layers] in the layer pane, then select *Clear layer*.
-
-TIP: You can manually apply the changes you make, which is helpful when creating large and complex visualizations. To manually apply your changes, click *Settings* in the toolbar, then deselect *Auto-apply visualization changes*.
-
-[float]
-[[change-the-fields]]
-==== Change the fields list
-
-Change the fields list to display a different {data-source}, different time range, or add your own fields.
-
-* To create a visualization with fields in a different {data-source}, open the {data-source} dropdown, then select the {data-source}. 
+.. Click *Right* for the *Axis side*, then click *Close*.
 +
-For more information about {data-sources}, refer to <<data-views>>.
+image::images/lens_advancedTutorial_numberOfCustomers_8.5.0.png[Number of customers area chart in Lens]
 
-* If the fields list is empty, change the <<set-time-filter,time filter>>.
+. Drag the *order_date* field to the *Horizontal Axis* field in the second layer.
 
-* To add fields, open the {data-source} dropdown, then select *Add a field to this {data-source}*.
+. Open the *Layer visualization type* menu for the second layer, then click *Line*.
 +
 [role="screenshot"]
-image:images/lens_dataViewDropDown_8.4.0.png[Dropdown menu located next to {data-source} field with items for adding and managing fields]
-+
-For more information about adding fields to {data-sources} and examples, refer to <<runtime-fields>>.
+image::images/lens_layerVisualizationTypeMenu_7.16.png[Layer visualization type menu]
 
-[float]
-[[create-custom-tables]]
-==== Create custom tables
-
-Tables are highly customizable, and provide you with text alignment, value formatting, coloring options, and more.
-
-. From the *Visualization type* dropdown, select *Table*. 
-
-. Drag the fields you want to visualize to the workspace. 
-
-. To sort or hide the columns, click the arrow next to the column heading, then select an option.
-+
-All columns that belong to the same layer pane group are sorted in the table.
-
-. To change the display options, click a *Metrics* field in the layer pane, then configure the following options:
-
-* *Name* &mdash; Specifies the field display name. 
-
-* *Collapse by* &mdash; Aggregates all metric values with the same value into a single number.
-
-* *Value format* &mdash; Specifies how the field value displays in the table. 
-
-* *Text alignment* &mdash; Aligns the values in the cell to the *Left*, *Center*, or *Right*.
-
-* *Hide column* &mdash; Hides the column for the field.
-
-* *Directly filter on click* &mdash; Turns column values into clickable links that allow you to filter or drill down into the data.
-
-* *Summary row* &mdash; Adds a row that displays the summary value. When specified, allows you to enter a *Summary label*.
-
-* *Color by value* &mdash; Applies color to the cell or text values. To change the color, click *Edit*. 
-
-. Click *Close*.
-
-[float]
-[[create-custom-metric-visualizations]]
-==== Create custom metric visualizations
-
-Metric visualizations display single values, and allow you to customize the color, value format, icon, and more.
-
-. From the *Visualization type* dropdown, select *Metric*. 
-
-. Drag the fields you want to visualize to the workspace. 
-
-. To change the display options, click a *Metrics* field in the layer pane, then configure the following options:
-
-* *Name* &mdash; Specifies the field display name. 
-
-* *Value format* &mdash; Specifies how the field value displays in the metric. 
-
-* *Color mode* &mdash; Specifies how color is applied.
-
-* *Icon decoration* &mdash; Specific the icon to display.
-
-* *Supporting visualization* &mdash; Specifies the visualization type to display in the metric.
-
-. Click *Close*.
-
-[float]
-[[drag-and-drop-keyboard-navigation]]
-==== Create visualizations with keyboard navigation
-
-To use a keyboard instead of a mouse, use the *Lens* fully accessible and continuously improved drag system.
-
-. Select the field in the fields list or layer pane. Most fields have an inner and outer select state. The inner state opens a panel with detailed information or options. 
-The outer state allows you to drag the field. Tab through the fields until you get the outer state on the field.
+. Open the *Legend* menu, then select the *Alignment* arrow that displays the legend above the visualization.
 +
 [role="screenshot"]
-image::images/lens_drag_drop_2.png[Lens drag and drop focus state]
+image::images/lens_mixedXYChart_7.16.png[Layer visualization type menu]
 
-. Complete the following actions:
+Each visualization type allows you to configure a variety of components, including:
 
-* To select a field, press Space bar.
+* *Visual options* &mdash; Specifies how to display area, line, and bar chart options. For example, you can specify how to display the labels in bar charts.
 
-* To select where you want to drop the field, use the Left and Right arrows.
+* *Labels* &mdash; Specifies how to display the labels for donut charts, pie charts, and treemaps. 
 
-* To reorder the fields on the layer pane, use the Up and Down arrows.
+* *Legend* &mdash; Specifies how to display the legend. For example, you can display the legend inside the visualization and truncate the legend values.
 
-* To duplicate an action, use the Left and Right arrows, then select the *Drop a field or click to add* field you want to use.
-+
-[role="screenshot"]
-image::images/lens_drag_drop_3.gif[Using drag and drop to reorder]
+* *Left axis*, *Bottom axis*, and *Right axis* &mdash; Specify how you want to display the chart axes. For example, add axis labels and change the orientation and bounds.
 
-. To confirm the action, press Space bar. To cancel, press Esc.
+. To add the visualization to the dashboard, click *Save and return*.
 
 [float]
 [[lens-formulas]]
-==== Use formulas to perform math
+=== Use formulas to perform math
 
-Formulas allow you to perform math on aggregated data. The most common formulas divide two values to produce a percent.
+Formulas allow you to do math using a combination of {es} aggregations and math functions. The most common formulas divide two values to produce a percent.
 
 . In the layer pane, click a field.
 
@@ -197,7 +119,7 @@ TIP: For detailed information on formulas, click image:dashboard/images/formula_
 
 [float]
 [[compare-data-with-time-offsets]]
-==== Compare differences over time
+=== Compare differences over time
 
 Compare your real-time data to the results that are offset by a time increment. For example, you can compare the real-time percentage of a user CPU time spent to the results offset by one hour. 
 
@@ -207,35 +129,22 @@ Compare your real-time data to the results that are offset by a time increment. 
 
 . In the *Time shift* field, enter the time offset increment. 
 
-For a time shift example, refer to <<compare-time-ranges>>.
+For a time shift example, check <<compare-time-ranges>>.
 
 [float]
 [[create-partition-charts-with-multiple-metrics]]
-==== Create partition charts with multiple metrics
+=== Create partition charts with multiple metrics
 
 To create partition charts, such as pie charts, you configure one or more *Slice by* dimensions to define the partitions, and a *Metric* dimension to define the size. 
-To create partition charts with multiple metrics, use the layer settings. Multiple metrics are unsupported in mosaic visualizations.
+To create partition charts with multiple metrics, use the layer settings. Multiple metrics are unsupported for mosaic visualizations.
 
 . In the layer pane, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu for the partition visualization layer], then select *Layer settings*.
 
 . Select *Multiple metrics*.
 
 [float]
-[[improve-visualization-loading-time]]
-==== Improve visualization loading time
-
-preview::[]
-
-Data sampling allows you to improve the visualization loading time. To improve the performance, you use a lower sampling percentage, which lowers the accuracy. 
-Use low sampling percentages on large datasets.
-
-. In the layer pane, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu for the partition visualization layer], then select *Layer settings*.
-
-. To select the *Sampling* percentage, use the slider.
-
-[float]
 [[add-annotations]]
-==== Add annotations
+=== Add annotations
 
 preview::[]
 
@@ -290,7 +199,7 @@ Specify the annotation appearance.
 
 [float]
 [[add-reference-lines]]
-==== Add reference lines
+=== Add reference lines
 
 With reference lines, you can identify specific values in your visualizations with icons, colors, and other display options. You can add reference lines to any visualization type that displays axes.
 
@@ -313,13 +222,13 @@ image::images/lens_referenceLine_7.16.png[Lens drag and drop focus state]
 
 [float]
 [[filter-the-data]]
-==== Apply filters
+=== Search and filter your data
 
 You can use the <<semi-structured-search, query bar>> to create queries that filter all the data in a visualization, or use the layer pane and legend filters to apply filters based on field values.
 
 [float]
 [[filter-with-the-function]]
-===== Apply multiple KQL filters
+==== Apply multiple KQL filters
 
 With the *Filters* function, you can apply more than one KQL filter, and apply a KQL filter to a single layer so you can visualize filtered and unfiltered data at the same time.
 
@@ -333,7 +242,7 @@ To try the *Filters* function on your own, refer to <<custom-ranges,Compare a su
 
 [float]
 [[filter-with-the-advanced-option]]
-===== Apply a single KQL filter
+==== Apply a single KQL filter
 
 With the *Filter by* advanced option, you can assign a color to each filter group in *Bar* and *Line and area* visualizations, and build complex tables. For example, to display failure rate and the overall data.
 
@@ -345,7 +254,7 @@ With the *Filter by* advanced option, you can assign a color to each filter grou
 
 [float]
 [[filter-with-legend-filters]]
-===== Apply legend filters
+==== Apply legend filters
 
 Apply filters to visualizations directly from the values in the legend. *Bar*, *Line and area*, and *Proportion* visualizations support legend filters.
 
@@ -356,34 +265,45 @@ In the legend, click the field, then choose one of the following options:
 * *Filter out value* &mdash; Applies a filter that removes the field data from the visualization.
 
 [float]
-[[configure-the-visualization-components]]
-==== Configure the visualization components
-
-Each visualization type comes with a set of components that you access from the editor toolbar.
-
-The following component menus are available:
-
-* *Visual options* &mdash; Specifies how to display area, line, and bar chart options. For example, you can specify how to display the labels in bar charts.
-
-* *Labels* &mdash; Specifies how to display the labels for donut charts, pie charts, and treemaps. 
-
-* *Legend* &mdash; Specifies how to display the legend. For example, you can display the legend inside the visualization and truncate the legend values.
-
-* *Left axis*, *Bottom axis*, and *Right axis* &mdash; Specify how you want to display the chart axes. For example, add axis labels and change the orientation and bounds.
-
-[float]
 [[explore-lens-data-in-discover]]
 === Explore the data in Discover
 
-When your visualization includes one data view, you can open and explore the visualization data in *Discover*.
+When your visualization includes a single data view, you can open and explore the visualization data in *Discover*.
 
 To get started, click *Explore data in Discover* in the toolbar.
 
 For more information about exploring your data with *Discover*, check out <<discover,Discover>>.
 
 [float]
+[[drag-and-drop-keyboard-navigation]]
+=== Create visualizations with keyboard navigation
+
+To use a keyboard instead of a mouse, use the *Lens* fully accessible and continuously improved drag system.
+
+. Select the field in the fields list or layer pane. Most fields have an inner and outer select state. The inner state opens a panel with detailed information or options. 
+The outer state allows you to drag the field. Tab through the fields until you get the outer state on the field.
++
+[role="screenshot"]
+image::images/lens_drag_drop_2.png[Lens drag and drop focus state]
+
+. Complete the following actions:
+
+* To select a field, press Space bar.
+
+* To select where you want to drop the field, use the Left and Right arrows.
+
+* To reorder the fields on the layer pane, use the Up and Down arrows.
+
+* To duplicate an action, use the Left and Right arrows, then select the *Drop a field or click to add* field you want to use.
++
+[role="screenshot"]
+image::images/lens_drag_drop_3.gif[Using drag and drop to reorder]
+
+. To confirm the action, press Space bar. To cancel, press Esc.
+
+[float]
 [[view-data-and-requests]]
-==== View the visualization data and requests
+=== View the visualization data and requests
 
 To view the data included in the visualization and the requests that collected the data, use the *Inspector*.
 
@@ -402,32 +322,17 @@ To view the data included in the visualization and the requests that collected t
 .. To view the requests in *Console*, click *Request*, then click *Open in Console*.
 
 [float]
-[[save-the-lens-panel]]
-==== Save and add the panel
+[[improve-visualization-loading-time]]
+=== Improve visualization loading time
 
-Save the panel to the *Visualize Library* and add it to the dashboard, or add it to the dashboard without saving.
+preview::[]
 
-To save the panel to the *Visualize Library*:
+Data sampling allows you to improve the visualization loading time. To improve the performance, you use a lower sampling percentage, which lowers the accuracy. 
+Use low sampling percentages on large datasets.
 
-. Click *Save to library*.
+. In the layer pane, click image:dashboard/images/lens_layerActions_8.5.0.png[Actions menu for the partition visualization layer], then select *Layer settings*.
 
-. Enter the *Title* and add any applicable <<managing-tags,*Tags*>>.
-
-. Make sure that *Add to Dashboard after saving* is selected.
-
-. Click *Save and return*.
-
-To save the panel to the dashboard:
-
-. Click *Save and return*.
-
-. Add an optional title to the panel.
-
-.. In the panel header, click *No Title*.
-
-.. On the *Panel settings* window, select *Show title*.
-
-.. Enter the *Title*, then click *Save*.
+. To select the *Sampling* percentage, use the slider.
 
 [float]
 [[lens-faq]]
@@ -531,8 +436,8 @@ Here's a short list of few different aspects to check:
 .*How do I sort by multiple columns?*
 [%collapsible]
 ====
-Multiple column sorting is unsupported, but is supported in *Discover*. For information on how to sort multiple columns in *Discover*, 
-refer to <<explore-fields-in-your-data,Explore the fields in your data>>.
+Multiple column sorting is supported only in *Discover*. For information, 
+check <<explore-fields-in-your-data,Explore the fields in your data>>.
 ====
 
 [float]
@@ -543,7 +448,6 @@ refer to <<explore-fields-in-your-data,Explore the fields in your data>>.
 The following field types do not appear in the *Available fields* list:
 
 * Full-text
-* geo_point
 * flattened
 * object
 
@@ -593,33 +497,9 @@ For area, line, and bar charts, press Shift, then click the series in the legend
 ====
 
 [discrete]
-[[is-it-possible-to-use-saved-serches-in-lens]]
-.*How do I visualize saved searches?*
-[%collapsible]
-====
-Visualizing saved searches in unsupported.
-====
-
-[discrete]
-[[is-it-possible-to-decrease-or-increase-the-number-of-suggestions]]
-.*How do I change the number of suggestions?*
-[%collapsible]
-====
-Configuring the *Suggestions* is unsupported.
-====
-
-[discrete]
 [[is-it-possible-to-have-pagination-for-datatable]]
 .*Is it possible to have pagination in a data table?*
 [%collapsible]
 ====
 Pagination in a data table is unsupported. To use pagination in data tables, create an <<types-of-visualizations,aggregation-based data table>>.
-====
-
-[discrete]
-[[is-it-possible-to-select-color-for-specific-bar-or-point]]
-.*How do I change the color for a single data point?*
-[%collapsible]
-====
-Specifying the color for a single data point, such as a single bar or line, is unsupported.
 ====
