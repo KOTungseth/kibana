@@ -256,13 +256,13 @@ When you import dashboards with unavailable image panels, the image panel displa
 ============================================================================
 
 --
-include::create-panels.asciidoc[]
+include::panels/create-panels.asciidoc[]
 
-include::create-panels-with-editors.asciidoc[]
+include::panels/create-panels-with-editors.asciidoc[]
 
 include::make-dashboards-interactive.asciidoc[]
 
-include::save-panels.asciidoc[]
+include::panels/save-panels.asciidoc[]
 
 include::tutorial-create-a-dashboard-of-lens-panels.asciidoc[]
 

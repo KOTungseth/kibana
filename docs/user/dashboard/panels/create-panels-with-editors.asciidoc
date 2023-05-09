@@ -1,7 +1,14 @@
 [[aggregation-reference]]
-== Create panels with editors
+== Create panels
 
-To choose the best editor for your data, review the following information.
+{kib} provides several editors that you can use to create panels of your data. Each editor supports different features and {ref}/search-aggregations.html[{es} aggregations]. 
+
+The best way to create visualization panels is with the drag-and-drop visualization editor, which allows you to drag fields to the workspace, then automatically creates a visualization
+that best displays your data. 
+
+The drag-and-drop visualization editor supports the following panel types, features, functions, and aggregations.
+
+
 
 [float]
 [[chart-types]]
